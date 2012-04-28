@@ -1,7 +1,7 @@
 function getdetails(artist){
 $.ajax({
 				type: "GET",
-				url: "data.xml",
+				url: "data/concerts.xml",
 				dataType: "xml",
 				success: function(xml){
 				$(xml).find("concert").filter(function(){
@@ -11,8 +11,6 @@ $.ajax({
 				+'<div id="tabelartist">'+$(this).find('artist').text()+'</div>'
 				+'<div id="tabellocation">'+$(this).find('location').text()+'</div>'
 				+'<div id="tabelurl"><a href="'+$(this).find('url').text()+'">'+$(this).find('url').text()+'</a></div>').trigger('create');
-				counter++;
-				
 				})
 				}
 				})

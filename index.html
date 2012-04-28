@@ -1,28 +1,24 @@
 <!DOCTYPE HTML>
 <html manifest="cache.php">
     <head>
+    <!-- screen formatting -->
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"/>
         <meta name="apple-mobile-web-app-capable" content="yes">
         <meta name="format-detection" content="telephone=no" />
         <link rel="stylesheet" href="style/add2home.css">
-        <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+	 <link rel="apple-touch-icon" href="images/apple-touch-icon.png" />
+        <link rel="apple-touch-startup-image" href="images/landscape.png" media="only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:landscape)"  />
+        <link rel="apple-touch-startup-image" href="images/portrait.png" media="only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:portrait)" />
+	<link rel="stylesheet" href="css/jquery.mobile-1.1.0.min.css" />
+	<!--Javascript libraries-->
         <script type="application/javascript" src="src/add2home.js"></script>
-        <link rel="stylesheet" href="jquery.mobile-1.1.0.min.css" />
-        <script type="text/javascript" src="js/jquery-1.7.1.min.js"></script>
-        <script src="jquery.mobile-1.1.0.min.js"></script>
-        <script src="js/generatearticles.js"></script>
-        <style type="text/css">
-            .orientleft #shell{
-                -webkit-transform: rotate(-90deg);
-                -webkit-transform-origin:160px 160px;
-            }
-             .orientright #shell{
-                -webkit-transform: rotate(90deg);
-                -webkit-transform-origin:230px 230px;
-            }
-        </style>
+        <script type="text/javascript" src="js/Libraries/jquery-1.7.1.min.js"></script>
+        <script src="js/Libraries/jquery.mobile-1.1.0.min.js"></script>
+	<!--Home Made-->
+        <script src="js/Parsers/generatearticles.js"></script>
+	<script src="js/Parsers/generateconcerts.js"></script>
         <script type="text/javascript">
-            window.AddEventListener('orientationchange',function(){
+	window.AddEventListener('orientationchange',function(){
                 if(window.orientation == -90){
                     document.getElementById('orient').className = 'orientright';
                 }
@@ -32,20 +28,21 @@
                 if(window.orientation == 0){
                     document.getElementById('orient').className = 'orient';
                 }
-            },true)
-            
-        </script>
+            })
+	</script>
+	<!-- End Declarations -->
         <title>Home</title>
-        <link rel="apple-touch-icon" href="images/apple-touch-icon.png" />
-        <link rel="apple-touch-startup-image" href="images/landscape.png" media="only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:landscape)"  />
-        <link rel="apple-touch-startup-image" href="images/portrait.png" media="only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:portrait)" />
     </head>
     <body>
         <div data-role="page">
             <div data-role="header" data-position="fixed"><h1>Home</h1></div>
             <div data-role="content">
-                <div class="banner"><img src="images/banner2.jpg"/></div>
-                <div id="artikels"></div>
+	                    <div class="banner"><img src="images/banner2.jpg"/></div>
+	    <div class="ui-grid-b">
+	<div class="ui-block-a"><div id="artikels"></div></div>
+	<div class="ui-block-b"><div id="concerten"></div></div>
+	<div class="ui-block-c">Dit is een wedstrijd #1<br />Dit is een wedstrijd #1<br />Dit is een wedstrijd #1<br />Dit is een wedstrijd #1<br /></div>
+	</div>
             </div>
             <div data-role="footer" data-position="fixed">
                 <div data-role="navbar">

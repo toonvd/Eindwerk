@@ -1,7 +1,7 @@
 $(document).ready(function generatexml(){
 $.ajax({
 				type: "GET",
-				url: "artikels.xml",
+				url: "data/artikels.xml",
 				dataType: "xml",
 				success: function(xml){
 				$(xml).find("article").each(function(){

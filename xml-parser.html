@@ -1,59 +1,25 @@
 <!DOCTYPE html>
 <html>
 	<head>
-	<style type="text/css">
-
-	#tabel
-	{
-	background-color:#c0c7c9;
-	min-height:150px;
-	-moz-border-radius: 10px;
-	-webkit-border-radius: 10px;
-	width:39.5em;
-	margin-top:2%;
-	}
-	#tabelimage
-	{
-	float:left;
-	padding-top:10px;
-	padding-right:20px;
-	padding-left:20px;
-	}
-	#tabelartist
-	{
-	padding-top:10px;
-	font-size:30px;
-	}
-	#tabellocation
-	{
-	padding-top:10px;
-	font-sixze:20px;
-	}
-	#tabelurl
-	{
-	padding-top:10px;
-	font-size:20px;
-	}
-	#tabelurl a:link
-	{
-	color:#b6a43d;
-	text-decoration:none;
-	}
-	</style>
-	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"/>
-<meta name="apple-mobile-web-app-capable" content="yes">
-<meta name="format-detection" content="telephone=no" />
-		<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
-		<title>Kalender</title>
-	<link rel="stylesheet" href="jquery.mobile-1.1.0.min.css" />
-		<link type="text/css" href="css/ui-darkness/jquery-ui-1.8.18.custom.css" rel="stylesheet" />		
-		<script type="text/javascript" src="js/jquery-1.7.1.min.js"></script>
-		<script type="text/javascript" src="js/jquery-ui-1.8.18.custom.min.js"></script>
-		<script type="text/javascript" src="js/generatexml.js"></script>
-		<script type="text/javascript" src="js/language.js"></script>
-		<script src="jquery.mobile-1.1.0.min.js"></script>
-		<script type="text/javascript">
-		
+	<!-- screen formatting -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"/>
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="format-detection" content="telephone=no" />
+        <link rel="stylesheet" href="style/add2home.css">
+	 <link rel="apple-touch-icon" href="images/apple-touch-icon.png" />
+        <link rel="apple-touch-startup-image" href="images/landscape.png" media="only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:landscape)"  />
+        <link rel="apple-touch-startup-image" href="images/portrait.png" media="only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:portrait)" />
+	<link rel="stylesheet" href="css/jquery.mobile-1.1.0.min.css" />	
+	<link type="text/css" href="css/ui-darkness/jquery-ui-1.8.18.custom.css" rel="stylesheet" />
+	<!--Javascript libraries-->
+        <script type="text/javascript" src="js/Libraries/jquery-1.7.1.min.js"></script>
+        <script src="js/Libraries/jquery.mobile-1.1.0.min.js"></script>	
+	<script type="text/javascript" src="js/Libraries/jquery-ui-1.8.18.custom.min.js"></script>
+	<script type="text/javascript" src="js/Parsers/generatexml.js"></script>
+	<script type="text/javascript" src="js/Libraries/language.js"></script>
+	<!--Home Made-->
+        <script type="text/javascript" src="js/force-orientation.js"></script>
+	<script type="text/javascript">
 			$(function(){
 				$.datepicker.setDefaults($.datepicker.regional['nl-BE']);
 				// Datepicker
@@ -68,9 +34,8 @@
 					
 				});
 			});
-		</script>
-
-				
+		</script>	
+<!-- End Declarations -->
 	</head>
 	<body>
 <div data-role="page">

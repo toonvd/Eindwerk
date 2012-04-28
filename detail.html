@@ -1,19 +1,22 @@
 <!DOCTYPE html>
 <html>
     <head>
+       <!-- screen formatting -->
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"/>
         <meta name="apple-mobile-web-app-capable" content="yes">
         <meta name="format-detection" content="telephone=no" />
-        <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
-        <title>Detail</title>
-        <link rel="stylesheet" href="jquery.mobile-1.1.0.min.css" />
-        <link type="text/css" href="css/ui-darkness/jquery-ui-1.8.18.custom.css" rel="stylesheet" />		
-        <script type="text/javascript" src="js/jquery-1.7.1.min.js"></script>
-        <script type="text/javascript" src="js/jquery-ui-1.8.18.custom.min.js"></script>
-        <script type="text/javascript" src="js/generatedetail.js"></script>
-        <script type="text/javascript" src="js/language.js"></script>
-        <script src="jquery.mobile-1.1.0.min.js"></script>
-        <script type="text/javascript">
+        <link rel="stylesheet" href="style/add2home.css">
+	 <link rel="apple-touch-icon" href="images/apple-touch-icon.png" />
+        <link rel="apple-touch-startup-image" href="images/landscape.png" media="only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:landscape)"  />
+        <link rel="apple-touch-startup-image" href="images/portrait.png" media="only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:portrait)" />
+	<link rel="stylesheet" href="css/jquery.mobile-1.1.0.min.css" />
+	<!--Javascript libraries-->
+        <script type="text/javascript" src="js/Libraries/jquery-1.7.1.min.js"></script>
+        <script src="js/Libraries/jquery.mobile-1.1.0.min.js"></script>
+	<!--Home Made-->
+        <script src="js/Parsers/generatedetail.js"></script>
+        <script type="text/javascript" src="js/force-orientation.js"></script>
+	<script type="text/javascript">
 		
             $(document).ready(function(){
                 var valoutput ;
@@ -27,8 +30,7 @@
             });
             
         </script>
-
-
+	<!-- End Declarations -->
     </head>
     <body>
         <div data-role="page">

@@ -23,7 +23,7 @@ function generatexml(dateText){
     var counter=0;
     $.ajax({
         type: "GET",
-        url: "data.xml",
+        url: "data/concerts.xml",
         dataType: "xml",
         success: function(xml){
             var parse = $.datepicker.parseDate('dd/mm/yy', dateText);
