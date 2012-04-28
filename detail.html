@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"/>
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="format-detection" content="telephone=no" />
+        <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+        <title>Detail</title>
+        <link rel="stylesheet" href="jquery.mobile-1.1.0.min.css" />
+        <link type="text/css" href="css/ui-darkness/jquery-ui-1.8.18.custom.css" rel="stylesheet" />		
+        <script type="text/javascript" src="js/jquery-1.7.1.min.js"></script>
+        <script type="text/javascript" src="js/jquery-ui-1.8.18.custom.min.js"></script>
+        <script type="text/javascript" src="js/generatedetail.js"></script>
+        <script type="text/javascript" src="js/language.js"></script>
+        <script src="jquery.mobile-1.1.0.min.js"></script>
+        <script type="text/javascript">
+		
+            $(document).ready(function(){
+                var valoutput ;
+                if(typeof(window.localStorage) != 'undefined'){ 
+                    valoutput = window.localStorage.getItem ("key10");
+                } 
+                else{ 
+                    throw "window.localStorage, not defined"; 
+                }
+                getdetails(valoutput)
+            });
+            
+        </script>
+
+
+    </head>
+    <body>
+        <div data-role="page">
+            <div data-role="header">
+                <a href="xml-parser.html" data-icon="back" data-rel="back">back</a>
+                <h1>Edit Contact</h1>
+            </div>            
+            <div data-role="content">
+                <div class="banner"><img src="images/banner.jpg"/></div>
+                <div id="container"></div>
+            </div>
+            <div data-role="footer" data-position="fixed">
+                <div data-role="navbar">
+                    <ul>
+                        <li><a href="index.html" onclick="window.location.href=this.href; return false">Home</a></li>
+                        <li><a href="xml-parser.html" onclick="window.location.href=this.href; return false">Kalender</a></li>
+                        <li><a href="#" onclick="window.location.href=this.href; return false">test</a></li>
+                        <li><a href="#" onclick="window.location.href=this.href; return false">test</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
+
+
