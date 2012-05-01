@@ -1,9 +1,22 @@
 <?xml version="1.0"?>
 <stuffs>
-    <stuff>
-        <title>Sioen</title>
-        <content>De Zwerver leffinge</content>
-        <image>24/03/2012</image>
-        <url>www.test.com</url>
+	<stuff>
+        <title><![CDATA[5 x Allen Stone-duoticket 6 april @ Beursschouwburg, Brussel]]></title>
+        <content><![CDATA[Allen Stone is zowat de nieuwe soul- en r&b-sensatie uit de States. Vergelijkingen met Stevie Wonder en Prince à volonte. Nodig ook nog Midnight Magic (met ex-leden van Hercules And Love Affair) en ZZ Ward uit, en het wordt daar een zwoel avondje, op 6 april in Beursschouwburg. 5 mensen mogen met partner op de guestlist. Mail deze keer niét naar filip. rifraf@skynet.be maar naar agenda.rifraf@skynet.be! Opletten dus.]]></content>
+        <image><![CDATA[http://youmeandcharlie.com/wp-content/uploads/2012/03/allen-stone-1.jpg]]></image>
+        <url>agenda@rifraf.be</url>
     </stuff>
-</stuffs>
+	<stuff>
+        <title><![CDATA[2 x School Is Cool/Isbells-duoticket 13 en 15 april @ Effenaar, Einhoven]]></title>
+        <content><![CDATA[Belgen in Eindhoven! Sterker nog: Belgen die met hen recentste plaat de RifRaf-cover haalden in Eindhoven! Toeval bestaat wel degelijk. Wil je zowel op 13 april School Is Cool als op 15 april Isbells live uitchecken in Effenaar, mail dan snel! En check ook eens www.effenaar.nl voor het volledige programma, daar net over de grens.]]></content>
+        <image><![CDATA[http://1.standaardcdn.be/Assets/Images_Upload/2012/01/24/SCHOOL_IS_COOL_001_By_Jimmy.jpg.h380.jpg]]></image>
+        <url>agenda@rifraf.be</url>
+    </stuff>
+	<stuff>
+        <title><![CDATA[3 x Mr. Scruff-duoticket 20 april @ VK*, Brussel]]></title>
+        <content><![CDATA[Yes, de vrolijk-geschifte Ninja Tuner, Mr. Scruff, komt naar Brussel voor een wel heel stevig setje. Van 20u30 tot 2u staat hij immers op het podium van VK*. Als je niet tegen vette bassen kan, ben blijf je maar beter thuis, waarschuwt hij. Gek van vette bassen? Mail dan snel. VK* schenkt immers 3 duoticket aan de RifRaf-lezers. En bezoek eens www.vkconcerts.be voor meer info.]]></content>
+        <image><![CDATA[http://www.brightonlife.com/images/news/2286.jpg]]></image>
+        <url>filip@rifraf.be</url>
+    </stuff>
+	
+	</stuffs>

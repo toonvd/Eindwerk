@@ -30,10 +30,10 @@ $(document).ready(function generatexml(){
                 if(counter > 0){
                     line = '<hr /> <br />'
                     }
-                $('#concerten').append(line+'<div id="tabel" onclick="navigate('+"'"+$(this).find('artist').text()+"'"+')"><div id="tabelimage"><img src="http://griekenland.mixxt.at/storage/images/events/0/0/0/00000000000000000000000000000.jpg"/></div>'
-                    +'<div id="artist">'+$(this).find('artist').text()+'</div>'
-                    +'<div id="date">'+$(this).find('date').text()+'</div>'
-					+'<div id="location">'+$(this).find('location').text()+'</div>'
+                $('#concerten').append(line+'<div id="tabelhomepage" onclick="navigate('+"'"+$(this).find('artist').text()+"'"+')"><div id="artist">'+$(this).find('artist').text()+'</div>'
+					+'<div id="date">'+$(this).find('date').text()+'</div>'
+					+'<div id="id="tabelimage""><img src="http://griekenland.mixxt.at/storage/images/events/0/0/0/00000000000000000000000000000.jpg"/></div>'
+                   	+'<div id="location">'+$(this).find('location').text()+'</div>'
                     +'<div id="review">'+$(this).find('review').text()+'</div>').trigger('create');
                 counter ++;
             })
