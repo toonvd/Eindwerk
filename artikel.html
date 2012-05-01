@@ -1,26 +1,65 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+<!DOCTYPE HTML>
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-<title>Untitled Document</title>
-<link href="css/article.css" rel="stylesheet" TYPE="text/css">
+    <!-- screen formatting -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"/>
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="format-detection" content="telephone=no" />
+    <link rel="stylesheet" href="style/add2home.css">
+    <link rel="apple-touch-icon" href="images/apple-touch-icon.png" />
+    <link rel="apple-touch-startup-image" href="images/landscape.png" media="only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:landscape)"  />
+    <link rel="apple-touch-startup-image" href="images/portrait.png" media="only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:portrait)" />
+    <link rel="stylesheet" href="css/jquery.mobile-1.1.0.min.css" />
+    <!--Javascript libraries-->
+    <script type="application/javascript" src="src/add2home.js"></script>
+    <script type="text/javascript" src="js/Libraries/jquery-1.7.1.min.js"></script>
+    <script src="js/Libraries/jquery.mobile-1.1.0.min.js"></script>
+    <!--Home Made-->
+    <script type="text/javascript" src="js/force-orientation.js"></script>
+    <script src="js/Parsers/generatedetaila.js"></script>
+    <script type="text/javascript">
+		
+        $(document).ready(function(){
+            var valoutput ;
+            if(typeof(window.localStorage) != 'undefined'){ 
+                valoutput = window.localStorage.getItem ("key10");
+            } 
+            else{ 
+                throw "window.localStorage, not defined"; 
+            }
+            getdetailsa(valoutput)
+        });
+    </script>
+    <!-- End Declarations -->
+    <title>Artikel</title>
 </head>
-
 <body>
-	<div id="social">
-    	<ul>
-        	<li><a href="http://www.facebook.com"><img src="images/facebook.png"/></a></li>
-            <li><a href="http://www.twitter.com"><img src="images/twitter.png"/></a></li>
-            <li><a href="http://www.gmail.com"><img src="images/mail.png"/></a></li>
-            <li><a href="http://www.pinterest.com"><img src="images/pinterest.png"/></a></li>
-            
-        </ul>
+    <div data-role="page">
+        <div data-role="header" data-position="fixed">
+            <a href="index.html" data-icon="back" data-rel="back">back</a>
+            <h1>Artikel</h1></div>
+        <div data-role="content">
+            <div class="banner"><img src="images/banner2.jpg"/></div>
+            <div id="social">
+                <ul>
+                    <li><a href="http://www.facebook.com"><img src="images/facebook.png"/></a></li>
+                    <li><a href="http://www.twitter.com"><img src="images/twitter.png"/></a></li>
+                    <li><a href="http://www.gmail.com"><img src="images/mail.png"/></a></li>
+                    <li><a href="http://www.pinterest.com"><img src="images/pinterest.png"/></a></li>
+
+                </ul>
+            </div>
+            <div id="container"></div>
+        </div>
+        <div data-role="footer" data-position="fixed">
+            <div data-role="navbar">
+                <ul>
+                    <li><a href="index.html" onclick="window.location.href=this.href; return false">Home</a></li>
+                    <li><a href="xml-parser.html" onclick="window.location.href=this.href; return false">Kalender</a></li>
+                    <li><a href="#" onclick="window.location.href=this.href; return false">test</a></li>
+                    <li><a href="#" onclick="window.location.href=this.href; return false">test</a></li>
+                </ul>
+            </div>
+        </div>
     </div>
-    <div id="article">
-    <div id="title"><p>Soap&Skin - Boat Turns Toward The Port</p></div>
-    <div id="postdate"><p>17/04/2012</p></div>
-    <div id="image"><img src='http://24.media.tumblr.com/tumblr_la57bxIEuk1qbjkujo1_500.jpg'/></div>
-    <div id="content"><p>Elke aanleiding moéten we gebruiken om deze magistrale Soap&Skin-song te posten. We geraken immers nog steeds niet uit de wurggreep van 'Boat Turns Toward The Port'. De 22-jarige Anja Plaschg slaat ons, op amper 2:30, compleet murw met dit hartverscheurend, schuifelend treurlied. Alle haren overeind, woensdagavond in AB, Brussel.</p></div>
-</div>
 </body>
 </html>

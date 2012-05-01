@@ -1,61 +1,62 @@
 <!DOCTYPE html>
 <html>
-	<head>
-	<!-- screen formatting -->
+    <head>
+        <!-- screen formatting -->
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"/>
         <meta name="apple-mobile-web-app-capable" content="yes">
         <meta name="format-detection" content="telephone=no" />
         <link rel="stylesheet" href="style/add2home.css">
-	 <link rel="apple-touch-icon" href="images/apple-touch-icon.png" />
+        <link rel="apple-touch-icon" href="images/apple-touch-icon.png" />
         <link rel="apple-touch-startup-image" href="images/landscape.png" media="only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:landscape)"  />
         <link rel="apple-touch-startup-image" href="images/portrait.png" media="only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:portrait)" />
-	<link rel="stylesheet" href="css/jquery.mobile-1.1.0.min.css" />	
-	<link type="text/css" href="css/ui-darkness/jquery-ui-1.8.18.custom.css" rel="stylesheet" />
-	<!--Javascript libraries-->
+        <link rel="stylesheet" href="css/jquery.mobile-1.1.0.min.css" />	
+        <link type="text/css" href="css/ui-darkness/jquery-ui-1.8.18.custom.css" rel="stylesheet" />
+        <!--Javascript libraries-->
         <script type="text/javascript" src="js/Libraries/jquery-1.7.1.min.js"></script>
         <script src="js/Libraries/jquery.mobile-1.1.0.min.js"></script>	
-	<script type="text/javascript" src="js/Libraries/jquery-ui-1.8.18.custom.min.js"></script>
-	<script type="text/javascript" src="js/Parsers/generatexml.js"></script>
-	<script type="text/javascript" src="js/Libraries/language.js"></script>
-	<!--Home Made-->
+        <script type="text/javascript" src="js/Libraries/jquery-ui-1.8.18.custom.min.js"></script>
+        <script type="text/javascript" src="js/Parsers/generatexml.js"></script>
+        <script type="text/javascript" src="js/Libraries/language.js"></script>
+        <!--Home Made-->
         <script type="text/javascript" src="js/force-orientation.js"></script>
-	<script type="text/javascript">
-			$(function(){
-				$.datepicker.setDefaults($.datepicker.regional['nl-BE']);
-				// Datepicker
-				$('#datepicker').datepicker({
+        <script type="text/javascript">
+            $(function(){
+                $.datepicker.setDefaults($.datepicker.regional['nl-BE']);
+                // Datepicker
+                $('#datepicker').datepicker({
 				
-					firstDay: 1,
-				        dateFormat: "dd/mm/yy",
-					inline: true,
-					onSelect: function(dateText){
-					generatexml(dateText);
-					}
+                    firstDay: 1,
+                    dateFormat: "dd/mm/yy",
+                    inline: true,
+                    onSelect: function(dateText){
+                        generatexml(dateText);
+                    }
 					
-				});
-			});
-		</script>	
-<!-- End Declarations -->
-	</head>
-	<body>
-<div data-role="page">
-<div data-role="content">
-<div class="banner"><img src="images/banner.jpg"/></div>
-<div id="datepicker"></div>
-<div id="container"></div>
-</div>
-<div data-role="footer" data-position="fixed">
-<div data-role="navbar">
-<ul>
-<li><a href="index.html" onclick="window.location.href=this.href; return false">Home</a></li>
-<li><a href="xml-parser.html" onclick="window.location.href=this.href; return false">Kalender</a></li>
-<li><a href="#" onclick="window.location.href=this.href; return false">test</a></li>
-<li><a href="#" onclick="window.location.href=this.href; return false">test</a></li>
-</ul>
-</div>
-</div>
-</div>
-</body>
+                });
+            });
+        </script>	
+        <!-- End Declarations -->
+        <title>kalender</title>
+    </head>
+    <body>
+        <div data-role="page">
+            <div data-role="content">
+                <div class="banner"><img src="images/banner.jpg"/></div>
+                <div id="datepicker"></div>
+                <div id="container"></div>
+            </div>
+            <div data-role="footer" data-position="fixed">
+                <div data-role="navbar">
+                    <ul>
+                        <li><a href="index.html" onclick="window.location.href=this.href; return false">Home</a></li>
+                        <li><a href="xml-parser.html" onclick="window.location.href=this.href; return false">Kalender</a></li>
+                        <li><a href="#" onclick="window.location.href=this.href; return false">test</a></li>
+                        <li><a href="#" onclick="window.location.href=this.href; return false">test</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </body>
 </html>
 
 

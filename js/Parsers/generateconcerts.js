@@ -19,17 +19,23 @@ function navigate(artist)
 				
 }
 $(document).ready(function generatexml(){
-$.ajax({
-				type: "GET",
-				url: "data/concerts.xml",
-				dataType: "xml",
-				success: function(xml){
-				$(xml).find("concert").each(function(){
-				$('#concerten').append('<div id="tabel" onclick="navigate('+"'"+$(this).find('artist').text()+"'"+')"><div id="tabelimage"><img src="http://griekenland.mixxt.at/storage/images/events/0/0/0/00000000000000000000000000000.jpg"/></div>'
-                    +'<div id="tabelartist">'+$(this).find('artist').text()+'</div>'
-                    +'<div id="tabellocation">'+$(this).find('location').text()+'</div>'
-                    +'<div id="tabelurl"><a href="'+$(this).find('url').text()+'">'+$(this).find('url').text()+'</a></div>').trigger('create');				
-				})
-				}
-				})
+    $.ajax({
+        type: "GET",
+        url: "data/concerts.xml",
+        dataType: "xml",
+        success: function(xml){
+            var counter = 0;
+            var line = "";
+            $(xml).find("concert").each(function(){
+                if(counter > 0){
+                    line = '<hr /> <br />'
+                    }
+                $('#concerten').append(line+'<div id="tabel" onclick="navigate('+"'"+$(this).find('artist').text()+"'"+')"><div id="tabelimage"><img src="http://griekenland.mixxt.at/storage/images/events/0/0/0/00000000000000000000000000000.jpg"/></div>'
+                    +'<div id="artist">'+$(this).find('artist').text()+'</div>'
+                    +'<div id="date">'+$(this).find('date').text()+'</div>'
+                    +'<div id="review">'+$(this).find('review').text()+'</div>').trigger('create');
+                counter ++;
+            })
+        }
+    })
 })
