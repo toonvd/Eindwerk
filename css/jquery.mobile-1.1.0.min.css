@@ -123,10 +123,10 @@ Eigen css
 .ui-grid-b .ui-block-a{float:left; width:33%; background-color:#eff0f0;}
 .ui-grid-b .ui-block-b{float:left; width:33%; background-color:#dee1e1;}
 .ui-grid-b .ui-block-c{float:left; width:33%; background-color:#ced2d3;}
-.ui-grid-b .ui-block-a #artikels{margin-right:5px; border-right: 1px solid black;}
+.ui-grid-b .ui-block-a #artikels{margin-right:5px;}
 .ui-grid-b .ui-block-a #artikels hr{width:75%;}
 .ui-grid-b .ui-block-a #artikels #image{width:70%;margin-right:5px;}
-.ui-grid-b .ui-block-b #concerten{margin-right:5px; border-right: 1px solid black;}
+.ui-grid-b .ui-block-b #concerten{margin-right:5px;}
 /*
 
 
