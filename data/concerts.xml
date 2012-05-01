@@ -1,5 +1,33 @@
 <?xml version="1.0"?>
 <concerts>
+	<concert>
+        <artist>Cool presents Quantic and Alice Russell</artist>
+        <location>het depot, Leuven</location>
+        <date>18/05/2012</date>
+        <review>Soulzangeres Alice Russell en producer Quantic hebben in het verleden al vaker samengewerkt en stellen nu hun eerste full album voor. Beide zijn verantwoordelijk voor een aanzienlijke input in de Britse soul en funk en het was dan ook hard uitkijken naar "Look Around The Corner". De rauwe soulstem van Alice Russell, het eclectische genie van Quantic en de verieuwde begeleidingsband Combo Bárbaro zorgen voor een unieke samenwerking. "Manna uit De Hemel" voor échte soulfans volgens BBC. Veel Cooler gaat het hier niet meer worden!</review>
+        <url>http://www.hetdepot.be/</url>
+    </concert>
+	<concert>
+        <artist>Sound of stereo</artist>
+        <location>het depot, Leuven</location>
+        <date>05/05/2012</date>
+        <review>Sound of Stereo is sinds 2008 bekend voor hun loeiharde dj-sets vol fidget, electro en techno en is nu helemaal klaar voor the next step: een energieke live-show met oud, nieuw en ongereleased materiaal. Verwacht je aan retestrakke beat en climax, na climax, na climax.</review>
+        <url>http://www.hetdepot.be/</url>
+    </concert>
+	<concert>
+        <artist>Red Rock Rally</artist>
+        <location>Astridpark, Brugge</location>
+        <date>01/05/2012</date>
+        <review>Sky Castles, The Agreement, Vienna, Buurman, Steak Number Eight, The Kids</review>
+        <url>http://www.redrockrally.be/</url>
+    </concert>
+	<concert>
+        <artist>Matthew Dear</artist>
+        <location>AB, Brussel</location>
+        <date>01/05/2012</date>
+        <review>Review</review>
+        <url>http://www.abconcerts.be/</url>
+    </concert>
     <concert>
         <artist>Sioen</artist>
         <location>De Zwerver leffinge</location>

@@ -91,9 +91,7 @@ Eigen css
 	color:#626773;
 	padding-left:15px;
 }
-#image{
-	width:200px;
-	padding-left:15px;}
+
 #content{
 	font-family:Verdana, Geneva, sans-serif;
 	color:#333535;
@@ -101,6 +99,7 @@ Eigen css
 	line-height:22px;
 	padding-left:15px;
 	width:200px;
+	padding-top:15px;
 }
 .banner{padding:0;}
 /*Force orientatie*/
@@ -125,7 +124,7 @@ Eigen css
 .ui-grid-b .ui-block-c{float:left; width:33%; background-color:#ced2d3;}
 .ui-grid-b .ui-block-a #artikels{margin-right:5px;}
 .ui-grid-b .ui-block-a #artikels hr{width:75%;}
-.ui-grid-b .ui-block-a #artikels #image{width:70%;margin-right:5px;}
+.ui-grid-b .ui-block-a #artikels #image{width:70%;margin-right:5px; width:200px; height:140px; padding-left:15px;}
 .ui-grid-b .ui-block-b #concerten{margin-right:5px;}
 /*
 
