@@ -1,48 +1,46 @@
 <!DOCTYPE HTML>
-<html manifest="cache.php">
-    <head>
-        <!-- screen formatting -->
-        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"/>
-        <meta name="apple-mobile-web-app-capable" content="yes">
-        <meta name="format-detection" content="telephone=no" />
-        <link rel="stylesheet" href="style/add2home.css">
-        <link rel="apple-touch-icon" href="images/apple-touch-icon.png" />
-        <link rel="apple-touch-startup-image" href="images/landscape.png" media="only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:landscape)"  />
-        <link rel="apple-touch-startup-image" href="images/portrait.png" media="only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:portrait)" />
-        <link rel="stylesheet" href="css/jquery.mobile-1.1.0.min.css" />
-        <!--Javascript libraries-->
-        <script type="application/javascript" src="src/add2home.js"></script>
-        <script type="text/javascript" src="js/Libraries/jquery-1.7.1.min.js"></script>
-        <script src="js/Libraries/jquery.mobile-1.1.0.min.js"></script>
-        <!--Home Made-->
-        <script src="js/Parsers/generatearticles.js"></script>
-        <script src="js/Parsers/generateconcerts.js"></script>
-        <script src="js/Parsers/generatestuff.js"></script>
-        <script type="text/javascript" src="js/force-orientation.js"></script>
-        <!-- End Declarations -->
-        <title>Home</title>
-    </head>
-    <body>
-        <div data-role="page">
-            <div data-role="header" data-position="fixed"><h1>Home</h1></div>
-            <div data-role="content">
-                <div class="banner"><img src="images/banner2.jpg"/></div>
-                <div class="ui-grid-b">
-                    <div class="ui-block-a"><div id="artikels"></div></div>
-                    <div class="ui-block-b"><div id="concerten"></div></div>
-                    <div class="ui-block-c"><div id="freestuff"></div></div>
-                </div>
-            </div>
-            <div data-role="footer" data-position="fixed">
-                <div data-role="navbar">
-                    <ul>
-                        <li><a href="index.html" onclick="window.location.href=this.href; return false">Home</a></li>
-                        <li><a href="xml-parser.html" onclick="window.location.href=this.href; return false">Kalender</a></li>
-                        <li><a href="#" onclick="window.location.href=this.href; return false">test</a></li>
-                        <li><a href="#" onclick="window.location.href=this.href; return false">test</a></li>
-                    </ul>
-                </div>
+<head>
+    <!-- screen formatting -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"/>
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="format-detection" content="telephone=no" />
+    <link rel="stylesheet" href="style/add2home.css">
+    <link rel="apple-touch-icon" href="images/apple-touch-icon.png" />
+    <link rel="apple-touch-startup-image" href="images/landscape.png" media="only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:landscape)"  />
+    <link rel="apple-touch-startup-image" href="images/portrait.png" media="only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:portrait)" />
+    <link rel="stylesheet" href="css/jquery.mobile-1.1.0.min.css" />
+    <!--Javascript libraries-->
+    <script type="application/javascript" src="src/add2home.js"></script>
+    <script type="text/javascript" src="js/Libraries/jquery-1.7.1.min.js"></script>
+    <script src="js/Libraries/jquery.mobile-1.1.0.min.js"></script>
+    <!--Home Made-->
+    <script src="js/Parsers/generatearticles.js"></script>
+    <script src="js/Parsers/generateconcerts.js"></script>
+    <script src="js/Parsers/generatestuff.js"></script>
+    <script type="text/javascript" src="js/force-orientation.js"></script>
+    <!-- End Declarations -->
+    <title>Home</title>
+</head>
+<body>
+    <div data-role="page">
+        <div data-role="header" data-position="fixed"><h1>Home</h1></div>
+        <div data-role="content">
+            <div class="banner"><img src="images/banner2.jpg"/></div>
+            <div class="ui-grid-b">
+                <div class="ui-block-a"><div id="artikels"></div></div>
+                <div class="ui-block-b"><div id="concerten"></div></div>
+                <div class="ui-block-c"><div id="freestuff"></div></div>
             </div>
         </div>
-    </body>
+        <div data-role="footer" data-position="fixed">
+            <div data-role="navbar">
+                <ul>
+                    <li onclick="window.location.href='index.html'"><a href="">Home</a></li>
+                    <li onclick="window.location.href='xml-parser.html'"><a href="">Calendar</a></li>
+                    <li><a href="#">Three</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
 </html>

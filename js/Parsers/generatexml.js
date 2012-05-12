@@ -1,22 +1,6 @@
 function navigate(artist)
 {
-    var valoutput ;
-    if(typeof(window.localStorage) != 'undefined'){ 
-        valoutput = window.localStorage. removeItem ("key10"); 
-    } 
-    else{ 
-        throw "window.localStorage, not defined"; 
-    }
-    var keyinput = "key10";
-    valoutput = artist;
-    if(typeof(window.localStorage) != 'undefined'){ 
-        window.localStorage.setItem(keyinput,valoutput);
-        window.location.href = "detail.html";
-    } 
-    else{ 
-        throw "window.localStorage, not defined"; 
-    }
-				
+window.location.href="detail.html?id="+encodeURIComponent(artist); 
 }
 function generatexml(dateText){
     $('#container').empty();

@@ -7,11 +7,27 @@ function getdetailsa(artist){
             $(xml).find("article").filter(function(){
                 return $(this).find("title").text().indexOf(artist) === 0;
             }).each(function(){
-                $('#container').append('<div>'+$(this).find('title').text()+'</div>'
-                    +'<div id="image"><img style="width:90%;" src="'+$(this).find('image').text()+'"alt="articleimage"/></div>'
-                    +'<div>'+$(this).find('date').text()+'</div>'
-                    +'<div>'+$(this).find('content').text()+'</div>').trigger('create');
+                $('#container').append('<div id="title_article">'+$(this).find('title').text()+'</div>'
+                    +'<div id="date_article">'+$(this).find('date').text()+'</div>'
+					+$(this).find('youtube').text()
+                    +'<div id="content_article">'+$(this).find('content').text()+'</div>').trigger('create');
             })
         }
     })
 }
+function getArticle(id) {
+                $.ajax({
+                    type: "GET",
+                    url: "data/artikels.xml",
+                    dataType: "xml",
+                    success: function(xml){
+                        oArticle = $(xml).find('article:eq('+id+')');
+                    
+                        $('#container').empty();       
+                        $('#container').append('<div id="title_article">'+oArticle.find('title').text()+'</div>'
+                            +'<div id="date_article">'+oArticle.find('date').text()+'</div>'
+                            +oArticle.find('youtube').text()
+                            +'<div id="content_article">'+oArticle.find('content').text()+'</div>').trigger('create');
+                    }
+                })
+            }

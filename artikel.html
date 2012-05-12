@@ -4,13 +4,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"/>
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="format-detection" content="telephone=no" />
-    <link rel="stylesheet" href="style/add2home.css">
     <link rel="apple-touch-icon" href="images/apple-touch-icon.png" />
-    <link rel="apple-touch-startup-image" href="images/landscape.png" media="only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:landscape)"  />
-    <link rel="apple-touch-startup-image" href="images/portrait.png" media="only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:portrait)" />
     <link rel="stylesheet" href="css/jquery.mobile-1.1.0.min.css" />
     <!--Javascript libraries-->
-    <script type="application/javascript" src="src/add2home.js"></script>
     <script type="text/javascript" src="js/Libraries/jquery-1.7.1.min.js"></script>
     <script src="js/Libraries/jquery.mobile-1.1.0.min.js"></script>
     <!--Home Made-->
@@ -18,83 +14,100 @@
     <script src="js/Parsers/generatedetaila.js"></script>
     <script type="text/javascript">		
         $(document).ready(function(){
-            var valoutput ;
-            if(typeof(window.localStorage) != 'undefined'){ 
-                valoutput = window.localStorage.getItem ("key10");
-            } 
-            else{ 
-                throw "window.localStorage, not defined"; 
+            $.urlParam = function(name){
+                var results = new RegExp('[\\?&]' + name + '=([^&#]*)').exec(window.location.href);
+                return results[1] || 0;
             }
-            getdetailsa(valoutput)
+           
+            var valoutput = decodeURIComponent($.urlParam('id'));
+            getdetailsa(valoutput);
+            $.ajax({                        
+                type: "GET",
+                url: "data/artikels.xml",
+                dataType: "xml",
+                success: function(xml){
+                    count = $(xml).find("article").each(function()
+                    {
+                        return $(this).children().length === 0;
+                    }).length;
+                }
+            })
+            
             var i = 0;
             $('body').live('swipeleft swiperight',function(event){
                 if (event.type == "swipeleft") {
-                    i--;
+                    if(i == 0)
+                    {
+                        i = count-1;
+                    }
+                    else
+                        i--;
                     getArticle(i);          
                 }
                       
                 if (event.type == "swiperight") {
-                    i++;
+                    if(i==count-1)
+                    {
+                        i=0;
+                    }
+                    else
+                        i++;
                     getArticle(i);
                 }
                          
             });
-            function getArticle(id) {
-                $.ajax({
-                    type: "GET",
-                    url: "data/artikels.xml",
-                    dataType: "xml",
-                    success: function(xml){
-                        oArticle = $(xml).find('article:eq('+id+')');
-                        if(oArticle.find('date').text() != ""){
-                            $('#container').empty();       
-                            $('#container').append('<div>'+oArticle.find('title').text()+'</div>'
-                                +'<div id="image"><img style="width:90%;" src="'+oArticle.find('image').text()+'"alt="articleimage"/></div>'
-                                +'<div>'+oArticle.find('date').text()+'</div>'
-                                +'<div>'+oArticle.find('content').text()+'</div>').trigger('create');
-                            
-                        }
-                        else
-                        {
-                            alert("end");
-                        }
-                    }
-                })
-        }
-    });
+        });
     </script>
     <!-- End Declarations -->
     <title>Artikel</title>
 </head>
 <body>
+    <div id="fb-root"></div>
+    <script>(function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s); js.id = id;
+        js.src = "//connect.facebook.net/nl_NL/all.js#xfbml=1";
+        fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));</script>
     <div data-role="page">
         <div data-role="header" data-position="fixed">
-            <a href="index.html" data-icon="back" data-rel="back">back</a>
+            <a href="" data-icon="back" data-rel="back">back</a>
             <h1>Artikel</h1></div>
         <div data-role="content">
             <div class="banner"><img src="images/banner2.jpg"/></div>
+
+            <div id="container"></div>
             <div id="social">
                 <ul>
-                    <li><a href="http://www.facebook.com"><img src="images/facebook.png"/></a></li>
-                    <li><a href="http://www.twitter.com"><img src="images/twitter.png"/></a></li>
-                    <li><a href="http://www.gmail.com"><img src="images/mail.png"/></a></li>
-                    <li><a href="http://www.pinterest.com"><img src="images/pinterest.png"/></a></li>
+                    <li><div class="fb-like" data-send="false" data-width="300" data-show-faces="false"></div></li>
+                    <li><a href="https://twitter.com/share" class="twitter-share-button">Tweet</a>
+                        <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script></li>
+                    <li><!-- Plaats deze tag waar u de +1-knop wilt laten renderen. -->
+                    <g:plusone annotation="inline"></g:plusone>
 
+                    <!-- Plaats deze renderaanroep waar van toepassing. -->
+                    <script type="text/javascript">
+                    (function() {
+                        var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+                        po.src = 'https://apis.google.com/js/plusone.js';
+                        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+                    })();
+                    </script></li>
                 </ul>
             </div>
-            <div id="container"></div>
         </div>
         <div data-role="footer" data-position="fixed">
             <div data-role="navbar">
                 <ul>
-                    <li><a href="index.html" onclick="window.location.href=this.href; return false">Home</a></li>
-                    <li><a href="xml-parser.html" onclick="window.location.href=this.href; return false">Kalender</a></li>
-                    <li><a href="#" onclick="window.location.href=this.href; return false">test</a></li>
-                    <li><a href="#" onclick="window.location.href=this.href; return false">test</a></li>
+                    <li onclick="window.location.href='index.html'"><a href="">Home</a></li>
+                    <li onclick="window.location.href='xml-parser.html'"><a href="">Calendar</a></li>
+                    <li><a href="#">Three</a></li>
                 </ul>
             </div>
         </div>
     </div>
 </body>
 </html>
+
 

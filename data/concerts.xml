@@ -1,73 +1,58 @@
 <?xml version="1.0"?>
 <concerts>
-	<concert>
-        <artist>Cool presents Quantic and Alice Russell</artist>
-        <location>het depot, Leuven</location>
-        <date>18/05/2012</date>
-        <review>Soulzangeres Alice Russell en producer Quantic hebben in het verleden al vaker samengewerkt en stellen nu hun eerste full album voor. Beide zijn verantwoordelijk voor een aanzienlijke input in de Britse soul en funk en het was dan ook hard uitkijken naar "Look Around The Corner". De rauwe soulstem van Alice Russell, het eclectische genie van Quantic en de verieuwde begeleidingsband Combo Bárbaro zorgen voor een unieke samenwerking. "Manna uit De Hemel" voor échte soulfans volgens BBC. Veel Cooler gaat het hier niet meer worden!</review>
-        <url>http://www.hetdepot.be/</url>
-    </concert>
-	<concert>
-        <artist>Sound of stereo</artist>
-        <location>het depot, Leuven</location>
-        <date>05/05/2012</date>
-        <review>Sound of Stereo is sinds 2008 bekend voor hun loeiharde dj-sets vol fidget, electro en techno en is nu helemaal klaar voor the next step: een energieke live-show met oud, nieuw en ongereleased materiaal. Verwacht je aan retestrakke beat en climax, na climax, na climax.</review>
-        <url>http://www.hetdepot.be/</url>
-    </concert>
-	<concert>
-        <artist>Red Rock Rally</artist>
-        <location>Astridpark, Brugge</location>
-        <date>01/05/2012</date>
-        <review>Sky Castles, The Agreement, Vienna, Buurman, Steak Number Eight, The Kids</review>
-        <url>http://www.redrockrally.be/</url>
-    </concert>
-	<concert>
-        <artist>Matthew Dear</artist>
-        <location>AB, Brussel</location>
-        <date>01/05/2012</date>
-        <review>Review</review>
-        <url>http://www.abconcerts.be/</url>
-    </concert>
-    <concert>
-        <artist>Sioen</artist>
-        <location>De Zwerver leffinge</location>
-        <date>24/03/2012</date>
-        <review>This is a review</review>
-        <url>http://www.test.be</url>
-    </concert>
-    <concert>
-        <artist>Sioen</artist>
-        <location>De Zwerver leffinge</location>
-        <date>24/03/2012</date>
-        <review>This is a review</review>
-        <url>http://www.test.be</url>
-    </concert>
-    <concert>
-        <artist>Sioen</artist>
-        <location>De Zwerver leffinge</location>
-        <date>24/03/2012</date>
-        <review>This is a review</review>
-        <url>http://www.test.be</url>
-    </concert>
-    <concert>
-        <artist>Sioen</artist>
-        <location>De Zwerver leffinge</location>
-        <date>24/03/2012</date>
-        <review>This is a review</review>
-        <url>http://www.test.be</url>
-    </concert>
-    <concert>
-        <artist>test</artist>
-        <location>test</location>
-        <date>24/03/2012</date>
-        <review>This is a review</review>
-        <url>http://www.test.be</url>
-    </concert>
-    <concert>
-        <artist>test2</artist>
-        <location>test2</location>
-        <date>25/03/2012</date>
-        <review>This is a review</review>
-        <url>http://www.test.be</url>
-    </concert>
+  <concert>
+    <artist>Sioen</artist>
+    <review>This is a review</review>
+    <location>De Zwerver leffinge</location>
+    <concertname/>
+    <image>http://toonvd.byethost7.com/wordpress/wp-content/uploads/2012/05/Steak+Number+Eight++0101.jpg</image>
+    <date>24/03/2012</date>
+    <ticketprice>&#x20AC; 25</ticketprice>
+    <ticketurl>http://www.ticketshop.be</ticketurl>
+    <url>http://www.test.be</url>
+  </concert>
+  <concert>
+    <artist>Matthew Dear</artist>
+    <review>ReviewReviewReview</review>
+    <location>AB, Brussel</location>
+    <concertname/>
+    <image>http://toonvd.byethost7.com/wordpress/wp-content/uploads/2012/05/DrumsAreForParade.jpg</image>
+    <date>01/05/2012</date>
+    <ticketprice>&#x20AC; 50</ticketprice>
+    <ticketurl>http://www.ticketshop.be</ticketurl>
+    <url>http://www.abconcerts.be/</url>
+  </concert>
+  <concert>
+    <artist>Sky Castles, The Agreement, Vienna, Buurman, Steak Number Eight, The Kids</artist>
+    <review>Fancy comments</review>
+    <location>Astridpark, Brugge</location>
+    <concertname>Astridpark, Brugge</concertname>
+    <image>http://toonvd.byethost7.com/wordpress/wp-content/uploads/2012/05/Steak+Number+Eight++010.jpg</image>
+    <date>01/05/2012</date>
+    <ticketprice>&#x20AC; 50</ticketprice>
+    <ticketurl>http://www.ticketshop.be</ticketurl>
+    <url>http://www.redrockrally.be/</url>
+  </concert>
+  <concert>
+    <artist>Sound of stereo</artist>
+    <review>Sound of Stereo is sinds 2008 bekend voor hun loeiharde dj-sets vol fidget, electro en techno en is nu helemaal klaar voor the next step: een energieke live-show met oud, nieuw en ongereleased materiaal. Verwacht je aan retestrakke beat en climax, na climax, na climax.</review>
+    <location>het depot, Leuven</location>
+    <concertname>test</concertname>
+    <image>http://toonvd.byethost7.com/wordpress/wp-content/uploads/2012/05/djmuggssnapyaneckback.jpg</image>
+    <date>05/05/2012</date>
+    <ticketprice>&#x20AC; 25</ticketprice>
+    <ticketurl>http://www.ticketshop.be</ticketurl>
+    <url>http://www.hetdepot.be/</url>
+  </concert>
+  <concert>
+    <artist>Cool presents Quantic and Alice Russell</artist>
+    <review>Soulzangeres Alice Russell en producer Quantic hebben in het verleden al vaker samengewerkt en stellen nu hun eerste full album voor. Beide zijn verantwoordelijk voor een aanzienlijke input in de Britse soul en funk en het was dan ook hard uitkijken naar "Look Around The Corner". De rauwe soulstem van Alice Russell, het eclectische genie van Quantic en de verieuwde begeleidingsband Combo B&#xE1;rbaro zorgen voor een unieke samenwerking. "Manna uit De Hemel" voor &#xE9;chte soulfans volgens BBC. Veel Cooler gaat het hier niet meer worden!</review>
+    <location>het depot, Leuven</location>
+    <concertname/>
+    <image>http://toonvd.byethost7.com/wordpress/wp-content/uploads/2012/05/41HRpRNhG-L.jpg</image>
+    <date>18/05/2012</date>
+    <ticketprice>&#x20AC;20</ticketprice>
+    <ticketurl>http://www.ticketshop.be</ticketurl>
+    <url>http://www.hetdepot.be/</url>
+  </concert>
 </concerts>
