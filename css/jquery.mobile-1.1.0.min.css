@@ -87,6 +87,7 @@ Eigen css
 	color:#8195a6;
 	font-size:18px;
 	padding-left:15px;
+	
 }
 #date{
 	font-family:Verdana, Geneva, sans-serif;
@@ -135,10 +136,10 @@ Eigen css
 	font-size:18px;
 	padding-left:15px;}
 /*-------Concerten tabel --------*/
-	#tabel{background-color:#c0c7c9;min-height:150px;-moz-border-radius: 10px;-webkit-border-radius: 10px;margin-top:2%;}
+	#tabel{min-height:150px;margin-top:2%;}
 	#tabelimage{float:left;padding-top:10px;padding-right:20px;padding-left:20px;}
-	#tabelartist{padding-top:10px;font-size:30px;}
-	#tabellocation{padding-top:10px;font-sixze:20px;}
+	#tabelartist{padding-top:10px;font-size:30px; font-family:ClarendonTMedRegular; color:#B6A43D;}
+	#tabellocation{padding-top:10px;font-sixze:20px;font-family:ClarendonTMedRegular;}
 	#tabelurl{padding-top:10px;font-size:20px;}
 	#tabelurl a:link{color:#b6a43d;	text-decoration:none;}
 /*
@@ -153,18 +154,22 @@ Eigen css
 .ui-grid-b .ui-block-b #concerten{margin-right:5px;}
 /*
 /*------ARTIKELPAGINA DETAIL------*/
-#container{margin-top:10%;}
+#container{margin-top:5%;}
 #title_article{
 	color:#8195a6;
 	font-family:ClarendonTMedRegular;
 	font-size:48px;
-	width:100%;
+	width:70%;
 	text-align:center;
+	margin: 0 auto;
+}
+strong{
+	font-weight:normal;
 }
 #date_article{
 	width:100%;
 	text-align:center;
-	font-family:Verdana, Geneva, sans-serif;
+	font-family:Arial, Helvetica, sans-serif;
 	color:#adb3b5;
 	font-size:16px;
 	padding-top:2%;
@@ -175,19 +180,32 @@ Eigen css
 	margin: 0 auto;
 }
 #content_article{
-	padding-top:15%;
+	padding-top:5%;
 	color:#1e1e1e;
 	font-family:Arial, Helvetica, sans-serif;
 	font-size:16px;
 	line-height:22px;
-	width:635px;
+	width:420px;
 	margin: 0 auto;
 }
+iframe{
+	margin-left: 25%;
+	
+	}
+#social{
+	width:500px;
+	float:right;
+	border: 1px solid red;
+	}
 #social ul{
 	list-style-type:none;
-	float:right;
+	
+	
 }
 social li{
-	float:left;}
+	float:left;
+}
+
 /*Einde eigen css
 */
+
