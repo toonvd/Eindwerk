@@ -88,35 +88,35 @@ Eigen css
 
 
 /*----3 column index layout----*/
-.ui-grid-b .ui-block-a{float:left; width:33%; background-color:#eff0f0;}
-.ui-grid-b .ui-block-b{float:left; width:33%; background-color:#dee1e1;}
-.ui-grid-b .ui-block-c{float:left; width:33%; background-color:#ced2d3;}
+.ui-grid-a .ui-block-d{float:left; width:33%; background-color:#eff0f0; height:710px;}
+.ui-grid-a .ui-block-e{float:left; width:33%; background-color:#dee1e1; height:710px;}
+.ui-grid-a .ui-block-f{float:left; width:33%; background-color:#ced2d3; height:710px;}
 
 
 /*-----ARTICLES ON HOMEPAGE------*/
-.ui-grid-b .ui-block-a #artikels{
+.ui-grid-a .ui-block-d #artikels{
     margin:0 auto;
 }
-.ui-grid-b .ui-block-a #artikels #title{
+.ui-grid-a .ui-block-d #artikels #title{
     font-family:ClarendonTMedRegular;
     color:#8195a6;
     font-size:18px;
     margin:0 auto;
 }
-.ui-grid-b .ui-block-a #artikels hr{
+.ui-grid-a .ui-block-d #artikels hr{
     width:75%;
 }
-.ui-grid-b .ui-block-a #artikels #image{
+.ui-grid-a .ui-block-d #artikels #image{
     margin:0 auto;
 }
-.ui-grid-b .ui-block-a #artikels #date{
+.ui-grid-a .ui-block-d #artikels #date{
     font-family:Verdana, Geneva, sans-serif;
     font-size:12px;
     color:#626773;
     padding-left:15px;
 }
 
-.ui-grid-b .ui-block-a #artikels #content{
+.ui-grid-a .ui-block-d #artikels #content{
     font-family:Verdana, Geneva, sans-serif;
     color:#333535;
     font-size:14px;
@@ -128,13 +128,13 @@ Eigen css
 
 
 /*-----CONCERTEN-------*/	
-.ui-grid-b .ui-block-b #tabelhomepage #artist{
+.ui-grid-a .ui-block-e #tabelhomepage #artist{
     font-family:ClarendonTMedRegular;
     color:#b6a43d;
     font-size:18px;
     padding-left:15px;
 }
-.ui-grid-b .ui-block-b #tabelhomepage #shortreview{
+.ui-grid-a .ui-block-e #tabelhomepage #shortreview{
     font-family: Verdana, Geneva, sans-serif;
     color: #333535;
     font-size: 14px;
@@ -143,31 +143,31 @@ Eigen css
     width: 200px;
     text-shadow: 0 1px 0 white;
 }
-.ui-grid-b .ui-block-b #tabelhomepage #tabelimage{
+.ui-grid-a .ui-block-e #tabelhomepage #tabelimage{
     margin:0 auto;
     height:20%;
 }
-.ui-grid-b .ui-block-b #tabelhomepage #location{
+.ui-grid-a .ui-block-e #tabelhomepage #location{
     padding-top:10px;
     font-size:14px;
     font-family:ClarendonTMedRegular;
     margin-left:10%;
 }
 
-.ui-grid-b .ui-block-b #tabelhomepage #date{
+.ui-grid-a .ui-block-e #tabelhomepage #date{
     font-family:Verdana, Geneva, sans-serif;
     font-size:12px;
     color:#626773;
     padding-left:15px;}
 
 /*----FREE STUFF-----*/
-.ui-grid-b .ui-block-c #stuff #titlestuff{
+.ui-grid-a .ui-block-f #stuff #titlestuff{
     font-family:ClarendonTMedRegular;
     color:#1f1426;
     font-size:18px;
     padding-left:15px;
 }
-.ui-grid-b .ui-block-c #stuff #detail{
+.ui-grid-a .ui-block-f #stuff #detail{
     font-family:ClarendonTMedRegular;
     color:#1f1426;
     font-size:14px;
@@ -271,40 +271,6 @@ social li{
 .ui-content.ui-scrollview-clip > .ui-listview.ui-scrollview-view {
     margin: 0;
 }
-.ui-block-a
-{
-    height:710px;
-}
-.ui-block-b
-{
-    height:710px;
-}
-.ui-block-c{
-    height:710px;
-}
-.navbar
-{
-
-    margin:0px;
-    padding:0px;                                   }
-#test ul li {
-    display: inline ;
-}
-.content{
-    margin-bottom:0px;
-    padding-bottom:0px;
-}
-/*#tabel{min-height:150px;margin-top:2%;}
-        #tabelimage{
-                margin:0 auto;
-                }
-        #tabelartist{padding-top:10px;font-size:30px; font-family:ClarendonTMedRegular; color:#B6A43D;}
-        #tabellocation{padding-top:10px;font-sixze:20px;font-family:ClarendonTMedRegular;}
-        #tabelurl{padding-top:10px;font-size:20px;}
-        #tabelurl a:link{color:#b6a43d;	text-decoration:none;}
-        
-#tabelurl{padding-top:10px;font-size:20px;}
-        #tabelurl a:link{color:#b6a43d;	text-decoration:none;}*/
 
 /*Einde eigen css
 */
