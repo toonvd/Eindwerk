@@ -10,10 +10,8 @@ function generatexml(dateText){
         url: "data/concerts.xml",
         dataType: "xml",
         success: function(xml){
-            var parse = $.datepicker.parseDate('dd/mm/yy', dateText);
-            var datez = $.datepicker.formatDate('DD d MM yy',new Date(parse)).toString();
-            var value = datez.split('00:00:00');
-            $('#container').append("<h2>"+value[0].toString()+"</h2>");
+            
+            $('#container').append("<h2>"+dateText.toString()+"</h2>");
             
             $(xml).find("concert").filter(function(){
                 return $(this).find("date").text().indexOf(dateText) === 0;

@@ -5,7 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"/>
         <meta name="apple-mobile-web-app-capable" content="yes">
         <meta name="format-detection" content="telephone=no" />
-        <link rel="stylesheet" href="style/add2home.css">
+        <link rel=stylesheet href="css/jquery.calendarPicker.css" type="text/css" media="screen">
         <link rel="apple-touch-icon" href="images/apple-touch-icon.png" />
         <link rel="apple-touch-startup-image" href="images/landscape.png" media="only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:landscape)"  />
         <link rel="apple-touch-startup-image" href="images/portrait.png" media="only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:portrait)" />
@@ -17,24 +17,10 @@
         <script type="text/javascript" src="js/Libraries/jquery-ui-1.8.18.custom.min.js"></script>
         <script type="text/javascript" src="js/Parsers/generatexml.js"></script>
         <script type="text/javascript" src="js/Libraries/language.js"></script>
+        <script type="text/javascript" src="js/Libraries/jquery.calendarPicker.js"></script>
         <!--Home Made-->
         <script type="text/javascript" src="js/force-orientation.js"></script>
-        <script type="text/javascript">
-            $(function(){
-                $.datepicker.setDefaults($.datepicker.regional['nl-BE']);
-                // Datepicker
-                $('#datepicker').datepicker({
-				
-                    firstDay: 1,
-                    dateFormat: "dd/mm/yy",
-                    inline: true,
-                    onSelect: function(dateText){
-                        generatexml(dateText);
-                    }
-					
-                });
-            });
-        </script>	
+
         <!-- End Declarations -->
         <title>kalender</title>
     </head>
@@ -42,15 +28,38 @@
         <div data-role="page">
             <div data-role="content">
                 <div class="banner"><img src="images/banner.jpg"/></div>
-                <div id="datepicker"></div>
+                <div id="dsel1" style="width:240px"></div><br>
+                <script type="text/javascript">
+
+
+                    var calendarPicker1 = $("#dsel1").calendarPicker({
+                        monthNames:["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"],
+                        dayNames: ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"],
+                        callbackDelay:500,
+                        callback:function(cal) {
+                            var d = cal.currentDate;
+                            var monthcheck = d.getMonth() + 1;
+                            if(monthcheck<10)
+                                {
+                                    monthcheck = "0"+monthcheck;
+                                }
+                             var day = d.getDate();
+                                if(day<10){
+                                    day = "0"+day;
+                                }
+                            var parsed = day + "/" + monthcheck + "/" + d.getFullYear();
+                            generatexml(parsed);
+                        }
+                    });
+                </script>
                 <div id="container"></div>
             </div>
             <div data-role="footer" data-position="fixed">
                 <div data-role="navbar">
                     <ul>
-                    <li onclick="window.location.href='index.html'"><a href="">Home</a></li>
-                    <li onclick="window.location.href='xml-parser.html'"><a href="">Calendar</a></li>
-                    <li><a href="#">Three</a></li>
+                        <li onclick="window.location.href='index.html'"><a href="">Home</a></li>
+                        <li onclick="window.location.href='xml-parser.html'"><a href="">Calendar</a></li>
+                        <li><a href="#">Three</a></li>
                     </ul>
                 </div>
             </div>
