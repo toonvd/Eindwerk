@@ -2,10 +2,13 @@
 <concerts>
   <concert>
     <artist>Sioen</artist>
-    <review>This is a review</review>
+    <shortreview>Ontmoet Frederik Sioen. Bekend van Sioen. Bekend als pianoman, ideale schoonzoon, maker van radiovriendelijke en ingetogen klassiekers als 'Cruisin'', 'Ease Your Mind' en 'No Conspiracy At All'.</shortreview>
+	<longreview>Dat alles tot grote verrassing van zijn vrienden. Die stonden te kijken van de opvallende rust achter de piano en de melancholische inborst van heel wat nummers. Was Sioen niet dat vat vol dynamiet? De man die nooit van de dansvloeren was te slaan? Sioen was niet alleen horen maar ook zien. Op het podium was alles een pak potiger dan op plaat. En toen kwam Zuid-Afrika. In 2007 nodigt Oxfam Frederik uit om samen te werken met lokale artiesten. Hij leert de mensen en de muziek kennen en hij leeft zich uit. "Ik ben acht keer in Soweto geweest en heb er in totaal anderhalf jaar verbleven. Zoiets verandert je als mens en heeft onvermijdelijk een impact op je nummers en je muziek." In Europa neigt melancholie naar tristesse. In Afrika muteert melancholie in een goed gevoel. Sioen komt achter zijn piano vandaan en schuift op naar het voorplan. En het publiek beweegt mee. Letterlijk. De Zuidafrikaanse concerten op Belgische bodem zijn volkfeesten.
+
+</longreview>
     <location>De Zwerver leffinge</location>
     <concertname/>
-    <image>http://toonvd.byethost7.com/wordpress/wp-content/uploads/2012/05/Steak+Number+Eight++0101.jpg</image>
+    <image>http://www.handelsbeurs.be/frontend/files/events/700/300x200/1335426686.jpg</image>
     <date>24/03/2012</date>
     <ticketprice>&#x20AC; 25</ticketprice>
     <ticketurl>http://www.ticketshop.be</ticketurl>
@@ -16,7 +19,7 @@
     <review>ReviewReviewReview</review>
     <location>AB, Brussel</location>
     <concertname/>
-    <image>http://toonvd.byethost7.com/wordpress/wp-content/uploads/2012/05/DrumsAreForParade.jpg</image>
+    <image>http://planetshhh.com/wp-content/uploads/2010/09/Matthew-Dear.jpg</image>
     <date>01/05/2012</date>
     <ticketprice>&#x20AC; 50</ticketprice>
     <ticketurl>http://www.ticketshop.be</ticketurl>
@@ -27,7 +30,7 @@
     <review>Fancy comments</review>
     <location>Astridpark, Brugge</location>
     <concertname>Astridpark, Brugge</concertname>
-    <image>http://toonvd.byethost7.com/wordpress/wp-content/uploads/2012/05/Steak+Number+Eight++010.jpg</image>
+    <image>http://upload.wikimedia.org/wikipedia/commons/thumb/e/e3/Steak_Number_Eight_by_Eva_Vlonk.jpg/264px-Steak_Number_Eight_by_Eva_Vlonk.jpg</image>
     <date>01/05/2012</date>
     <ticketprice>&#x20AC; 50</ticketprice>
     <ticketurl>http://www.ticketshop.be</ticketurl>
@@ -38,7 +41,7 @@
     <review>Sound of Stereo is sinds 2008 bekend voor hun loeiharde dj-sets vol fidget, electro en techno en is nu helemaal klaar voor the next step: een energieke live-show met oud, nieuw en ongereleased materiaal. Verwacht je aan retestrakke beat en climax, na climax, na climax.</review>
     <location>het depot, Leuven</location>
     <concertname>test</concertname>
-    <image>http://toonvd.byethost7.com/wordpress/wp-content/uploads/2012/05/djmuggssnapyaneckback.jpg</image>
+    <image>http://villabota.be/sites/villabota.be/files/nieuws/soundofstereo.jpg?1332943924</image>
     <date>05/05/2012</date>
     <ticketprice>&#x20AC; 25</ticketprice>
     <ticketurl>http://www.ticketshop.be</ticketurl>
@@ -49,7 +52,7 @@
     <review>Soulzangeres Alice Russell en producer Quantic hebben in het verleden al vaker samengewerkt en stellen nu hun eerste full album voor. Beide zijn verantwoordelijk voor een aanzienlijke input in de Britse soul en funk en het was dan ook hard uitkijken naar "Look Around The Corner". De rauwe soulstem van Alice Russell, het eclectische genie van Quantic en de verieuwde begeleidingsband Combo B&#xE1;rbaro zorgen voor een unieke samenwerking. "Manna uit De Hemel" voor &#xE9;chte soulfans volgens BBC. Veel Cooler gaat het hier niet meer worden!</review>
     <location>het depot, Leuven</location>
     <concertname/>
-    <image>http://toonvd.byethost7.com/wordpress/wp-content/uploads/2012/05/41HRpRNhG-L.jpg</image>
+    <image>http://t3.gstatic.com/images?q=tbn:ANd9GcRzJ-z8s3XAAzJ7DkqivocqMmb-SuaGh908hAnbYH6ozBHJq6MEkkXK4CkmVg</image>
     <date>18/05/2012</date>
     <ticketprice>&#x20AC;20</ticketprice>
     <ticketurl>http://www.ticketshop.be</ticketurl>

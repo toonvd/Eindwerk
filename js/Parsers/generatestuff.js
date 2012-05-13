@@ -11,8 +11,9 @@ $(document).ready(function generatestuff(){
                     line = '<hr /> <br />'
                     }
                 $('#freestuff').append(line + '<div id="stuff" onclick="navigatea('+"'"+$(this).find('title').text()+"'"+')"><div id="titlestuff"><strong>'+$(this).find('title').text()+'</strong></div>'
-                    +'<div id="date">'+$(this).find('date').text()+'</div><div id="image"><img style="width:90%;" src="'+$(this).find('image').text()+'"alt="articleimage"/></div>'
-                    +'<div id="content">'+$(this).find('content').text()+'</div>'
+                    +'<div id="detail">'+$(this).find('detail').text()+'</div><div id="image"><img style="width:90%;" src="'+$(this).find('image').text()+'"alt="articleimage"/></div>'
+                     
+					+'<div id="content">'+$(this).find('content').text()+'</div>'
                     +'<div id="url">'+$(this).find('url').text()+'</div></div><br />').trigger('create');	
                 counter++;
             })

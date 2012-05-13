@@ -10,7 +10,7 @@ function getdetailsa(artist){
                 $('#container').append('<div id="title_article">'+$(this).find('title').text()+'</div>'
                     +'<div id="date_article">'+$(this).find('date').text()+'</div>'
 					+$(this).find('youtube').text()
-                    +'<div id="content_article">'+$(this).find('content').text()+'</div>').trigger('create');
+                    +'<div id="content_article">'+$(this).find('fullcontent').text()+'</div>').trigger('create');
             })
         }
     })
@@ -27,7 +27,7 @@ function getArticle(id) {
                         $('#container').append('<div id="title_article">'+oArticle.find('title').text()+'</div>'
                             +'<div id="date_article">'+oArticle.find('date').text()+'</div>'
                             +oArticle.find('youtube').text()
-                            +'<div id="content_article">'+oArticle.find('content').text()+'</div>').trigger('create');
+                            +'<div id="content_article">'+oArticle.find('fullcontent').text()+'</div>').trigger('create');
                     }
                 })
             }

@@ -82,77 +82,103 @@
 /*
 Eigen css
 */
-#title{
+/*Force orientatie*/
+  .orientleft #shell{-webkit-transform: rotate(-90deg);-webkit-transform-origin:160px 160px;}
+.orientright #shell{-webkit-transform: rotate(90deg);-webkit-transform-origin:230px 230px;}
+/*END FORCE*/
+
+.banner{padding:0;}
+
+
+/*----3 column index layout----*/
+.ui-grid-b .ui-block-a{float:left; width:33%; background-color:#eff0f0;}
+.ui-grid-b .ui-block-b{float:left; width:33%; background-color:#dee1e1;}
+.ui-grid-b .ui-block-c{float:left; width:33%; background-color:#ced2d3;}
+
+
+/*-----ARTICLES ON HOMEPAGE------*/
+.ui-grid-b .ui-block-a #artikels{
+	margin:0 auto;
+}
+.ui-grid-b .ui-block-a #artikels #title{
 	font-family:ClarendonTMedRegular;
 	color:#8195a6;
 	font-size:18px;
-	padding-left:15px;
-	
+	margin:0 auto;
 }
-#date{
+.ui-grid-b .ui-block-a #artikels hr{
+	width:75%;
+}
+.ui-grid-b .ui-block-a #artikels #image{
+	margin:0 auto;
+}
+.ui-grid-b .ui-block-a #artikels #date{
 	font-family:Verdana, Geneva, sans-serif;
 	font-size:12px;
 	color:#626773;
 	padding-left:15px;
 }
 
-#content{
+.ui-grid-b .ui-block-a #artikels #content{
 	font-family:Verdana, Geneva, sans-serif;
 	color:#333535;
 	font-size:14px;
-	line-height:22px;
-	padding-left:15px;
+	line-height:18px;
+	margin: 0 auto;
 	width:200px;
-	padding-top:15px;
 	text-shadow: 0 1px 0 white;
 }
-.banner{padding:0;}
-/*Force orientatie*/
-  .orientleft #shell{-webkit-transform: rotate(-90deg);-webkit-transform-origin:160px 160px;}
-.orientright #shell{-webkit-transform: rotate(90deg);-webkit-transform-origin:230px 230px;}
-	#image
-	{
-	width:33%;
-	}
-#tabelhomepage #artist{
+
+
+/*-----CONCERTEN-------*/	
+.ui-grid-b .ui-block-b #tabelhomepage #artist{
 	font-family:ClarendonTMedRegular;
 	color:#b6a43d;
 	font-size:18px;
 	padding-left:15px;
 }
-#review{font-family:Verdana, Geneva, sans-serif;
-	color:#333535;
-	font-size:14px;
-	line-height:22px;
-	padding-left:15px;
-	width:200px;
-	padding-top:15px;
+.ui-grid-b .ui-block-b #tabelhomepage #shortreview{
+	font-family: Verdana, Geneva, sans-serif;
+	color: #333535;
+	font-size: 14px;
+	line-height: 18px;
+	margin: 0 auto;
+	width: 200px;
 	text-shadow: 0 1px 0 white;
 }
-#image{width:200px;}
-#titlestuff{
+.ui-grid-b .ui-block-b #tabelhomepage #tabelimage{
+		margin:0 auto;
+		height:20%;
+}
+.ui-grid-b .ui-block-b #tabelhomepage #location{
+	padding-top:10px;
+	font-size:14px;
+	font-family:ClarendonTMedRegular;
+	margin-left:10%;
+	}
+
+.ui-grid-b .ui-block-b #tabelhomepage #date{
+	font-family:Verdana, Geneva, sans-serif;
+	font-size:12px;
+	color:#626773;
+	padding-left:15px;}
+
+/*----FREE STUFF-----*/
+.ui-grid-b .ui-block-c #stuff #titlestuff{
 	font-family:ClarendonTMedRegular;
 	color:#1f1426;
 	font-size:18px;
-	padding-left:15px;}
-/*-------Concerten tabel --------*/
-	#tabel{min-height:150px;margin-top:2%;}
-	#tabelimage{float:left;padding-top:10px;padding-right:20px;padding-left:20px;}
-	#tabelartist{padding-top:10px;font-size:30px; font-family:ClarendonTMedRegular; color:#B6A43D;}
-	#tabellocation{padding-top:10px;font-sixze:20px;font-family:ClarendonTMedRegular;}
-	#tabelurl{padding-top:10px;font-size:20px;}
-	#tabelurl a:link{color:#b6a43d;	text-decoration:none;}
-/*
-3 column index layout
-*/
-.ui-grid-b .ui-block-a{float:left; width:33%; background-color:#eff0f0;}
-.ui-grid-b .ui-block-b{float:left; width:33%; background-color:#dee1e1;}
-.ui-grid-b .ui-block-c{float:left; width:33%; background-color:#ced2d3;}
-.ui-grid-b .ui-block-a #artikels{margin-right:5px;}
-.ui-grid-b .ui-block-a #artikels hr{width:75%;}
-.ui-grid-b .ui-block-a #artikels #image{;margin-right:5px; width:200px; height:140px; padding-left:15px;}
-.ui-grid-b .ui-block-b #concerten{margin-right:5px;}
-/*
+	padding-left:15px;
+}
+.ui-grid-b .ui-block-c #stuff #detail{
+	font-family:ClarendonTMedRegular;
+	color:#1f1426;
+	font-size:14px;
+	padding-left:15px;
+}
+
+	
+
 /*------ARTIKELPAGINA DETAIL------*/
 #container{margin-top:5%;}
 #title_article{
@@ -184,7 +210,7 @@ strong{
 	color:#1e1e1e;
 	font-family:Arial, Helvetica, sans-serif;
 	font-size:16px;
-	line-height:22px;
+	line-height:18px;
 	width:420px;
 	margin: 0 auto;
 }
@@ -205,6 +231,41 @@ iframe{
 social li{
 	float:left;
 }
+
+/*-----CONCERTENPAGINA DETAIL-----*/
+#tabel #tabelimage_detail{
+	float:left;
+	}
+#tabel #tabelartist_detail{
+	color:#1e1e1e;
+	font-family:ClarendonTMedRegular;
+	font-size:48px;
+	float:right;
+}
+#tabel #longreview{
+	float:left;}
+#tabel #tabellocation_detail img{
+	
+	float:right;
+}
+#tabel #tabelurl_detail a{
+	font-family:ClarendonTMedRegular; 
+	color:#B6A43D;
+	text-decoration:none;
+	font-weight:normal;
+	float:right;
+	}
+/*#tabel{min-height:150px;margin-top:2%;}
+	#tabelimage{
+		margin:0 auto;
+		}
+	#tabelartist{padding-top:10px;font-size:30px; font-family:ClarendonTMedRegular; color:#B6A43D;}
+	#tabellocation{padding-top:10px;font-sixze:20px;font-family:ClarendonTMedRegular;}
+	#tabelurl{padding-top:10px;font-size:20px;}
+	#tabelurl a:link{color:#b6a43d;	text-decoration:none;}
+	
+#tabelurl{padding-top:10px;font-size:20px;}
+	#tabelurl a:link{color:#b6a43d;	text-decoration:none;}*/
 
 /*Einde eigen css
 */
