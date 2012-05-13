@@ -143,7 +143,8 @@ Eigen css
     width: 200px;
     text-shadow: 0 1px 0 white;
 }
-.ui-grid-a .ui-block-e #tabelhomepage #tabelimage{
+.ui-grid-a .ui-block-e #tabelhomepage #
+{
     margin:0 auto;
     height:20%;
 }
@@ -228,7 +229,20 @@ iframe{
 social li{
     float:left;
 }
-
+/*-----KALENDERPAGINA-----*/
+#tabelartist{
+	color:#b6a43d;
+    font-family:ClarendonTMedRegular;
+    font-size:32px;
+    }
+#tabellocation{
+	color:#1e1e1e;
+	font-size:21px;
+	font-family:ClarendonTMedRegular;
+}
+#tabelimage{
+	float:left;
+	padding-right:5%;}
 /*-----CONCERTENPAGINA DETAIL-----*/
 #tabel #tabelimage_detail{
     float:left;
@@ -237,20 +251,17 @@ social li{
     color:#1e1e1e;
     font-family:ClarendonTMedRegular;
     font-size:48px;
-    float:right;
+    clear:right;
 }
 #tabel #longreview{
     float:left;}
-#tabel #tabellocation_detail img{
 
-    float:right;
-}
 #tabel #tabelurl_detail a{
     font-family:ClarendonTMedRegular; 
     color:#B6A43D;
     text-decoration:none;
     font-weight:normal;
-    float:right;
+    clear:right;
 }
 .ui-content.ui-scrollview-clip {
     padding: 0;
