@@ -1,5 +1,6 @@
 jQuery.fn.calendarPicker = function(options) {
   // --------------------------  start default option values --------------------------
+  
   if (!options.date) {
     options.date = new Date();
   }
@@ -57,26 +58,24 @@ jQuery.fn.calendarPicker = function(options) {
       var t = new Date();
       divYears.empty();
       var nc = options.years*2+1;
-      var w = parseInt((theDiv.width()-4-(nc)*4)/nc)+"px";
       for (var i = year - options.years; i <= year + options.years; i++) {
         var d = new Date(date);
         d.setFullYear(i);
-        var span = $("<span>").addClass("calElement").attr("millis", d.getTime()).html(i).css("width",w);
+        var span = $("<span>").addClass("calElement").attr("millis", d.getTime()).html(i);
         if (d.getYear() == t.getYear())
           span.addClass("today");
         if (d.getYear() == calendar.currentDate.getYear())
           span.addClass("selected");
         divYears.append(span);
-      }
+            }
     }
-
+    
     var fillMonths = function(date) {
       var month = date.getMonth();
       var t = new Date();
       divMonths.empty();
       var oldday = date.getDay();
       var nc = options.months*2+1;
-      var w = parseInt((theDiv.width()-4-(nc)*4)/nc)+"px";
       for (var i = -options.months; i <= options.months; i++) {
         var d = new Date(date);
         var oldday = d.getDate();
@@ -86,22 +85,23 @@ jQuery.fn.calendarPicker = function(options) {
           d.setMonth(d.getMonth() - 1);
           d.setDate(28);
         }
-        var span = $("<span>").addClass("calElement").attr("millis", d.getTime()).html(options.monthNames[d.getMonth()]).css("width",w);
+        var span = $("<span>").addClass("calElement").attr("millis", d.getTime()).html(options.monthNames[d.getMonth()]);
         if (d.getYear() == t.getYear() && d.getMonth() == t.getMonth())
           span.addClass("today");
         if (d.getYear() == calendar.currentDate.getYear() && d.getMonth() == calendar.currentDate.getMonth())
           span.addClass("selected");
         divMonths.append(span);
-
       }
     }
-
+    
+    
+    
     var fillDays = function(date) {
+       
       var day = date.getDate();
       var t = new Date();
       divDays.empty();
       var nc = options.days*2+1;
-      var w = parseInt((theDiv.width()-4-(options.showDayArrows?12:0)-(nc)*4)/(nc-(options.showDayArrows?2:0)))+"px";
       for (var i = -options.days; i <= options.days; i++) {
         var d = new Date(date);
         d.setDate(day + i)
@@ -111,12 +111,30 @@ jQuery.fn.calendarPicker = function(options) {
         } else if (i == options.days && options.showDayArrows) {
           span.addClass("next");
         } else {
-          span.html("<span class=dayNumber>" + d.getDate() + "</span><br>" + options.dayNames[d.getDay()]).css("width",w);
+          span.html("<span class=dayNumber>" + d.getDate() + "</span><br>" + options.dayNames[d.getDay()]);
+          
+          var monther = d.getMonth()+1;
+          if(monther<10)
+              {
+                  monther = "0"+monther;
+              }
+           var dayer = d.getDate();
+           if(dayer<10)
+               {
+                   dayer = "0"+dayer;
+               }
+          test= dayer+"/"+monther+"/"+d.getFullYear();
+          
+          if( $.inArray(test, list) > -1 ){
+                      
+                      span.addClass("concert"); 
+                    } 
           if (d.getYear() == t.getYear() && d.getMonth() == t.getMonth() && d.getDate() == t.getDate())
             span.addClass("today");
           if (d.getYear() == calendar.currentDate.getYear() && d.getMonth() == calendar.currentDate.getMonth() && d.getDate() == calendar.currentDate.getDate())
             span.addClass("selected");
         }
+        
         divDays.append(span);
 
       }
@@ -136,8 +154,23 @@ jQuery.fn.calendarPicker = function(options) {
 
     fillYears(date);
     fillMonths(date);
-    fillDays(date);
-
+    list = new Array();
+       $.ajax({
+                type: "GET",
+                url: "data/concerts.xml",
+                dataType: "xml",
+                success: function(xml){
+                    $(xml).find("concert").each(function(){
+                        list.push($(this).find('date').text());
+					
+                    })
+                    fillDays(date);
+                }
+            })
+    
+    
+    
+    
     deferredCallBack();
 
   }

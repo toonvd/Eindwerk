@@ -26,30 +26,30 @@
   text-align: center;
   color: #4a4a4a;
   font-family:BebasRegular;
+  width:100%;
   
 }
 .dsel1{
-	width:100%;}
+width:100%;}
 
 .calElement {
   margin: 1px;
   display: inline-block;
   overflow:hidden;
- 
 }
 
 .calYear {
   font-size: 20px;
- 
   padding-bottom: 5px;
-  margin-bottom: 5px
+  margin-bottom: 5px;
 }
 
 .calYear .calElement {
  font-family: Arial, Helvetica, sans-serif;
 font-size: 28px;
 padding: 15px;
-
+width:25%;
+border: 1px solid #999999;
 }
 
 .calMonth {
@@ -69,18 +69,20 @@ padding: 15px;
 }
 
 .calDay {
-	font-family:Arial, Helvetica, sans-serif;
+font-family:Arial, Helvetica, sans-serif;
 }
 
 .calDay .calElement {
   font-size: 12px;
   border: 1px solid #999999;
-  width:11%;
+  width:10%;
   height:40px;
 }
 
 .calDay .calElement.prev {
   background: transparent url(../images/prev.png) no-repeat 0 ;
+  width:5%;
+  border: 1px solid #999999;
  border:none;
   
 }
@@ -88,9 +90,11 @@ padding: 15px;
 .calDay .calElement.next {
   background: transparent url(../images/next.png) no-repeat 0 18px;
  border:none;
+ margin-left:5%;
 }
 
 span.calElement.next:hover, span.calElement.prev:hover {
+    background-color: #dee1e1;
   cursor: pointer;
 }
 
@@ -112,4 +116,9 @@ span.calElement:hover {
 
 .calElement.today {
   
+}
+.calElement.concert{
+     background-color: #404040;
+  border: 1px solid #404040;
+  -moz-border-radius: 3px
 }

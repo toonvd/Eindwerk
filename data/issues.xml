@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<issues>
+    <issue>
+        <image>images/12-05-vl.jpg</image>
+        <file>images/online-ezine-nl.pdf</file>
+        <date>test</date>
+    </issue>
+    <issue>
+        <image>images/12-05-vl.jpg</image>
+        <file>images/online-ezine-nl.pdf</file>
+        <date>blah</date>
+    </issue>
+    <issue>
+        <image>images/12-05-vl.jpg</image>
+        <file>images/online-ezine-nl.pdf</file>
+        <date>bleh</date>
+    </issue>
+</issues>

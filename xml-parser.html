@@ -16,7 +16,6 @@
         <script src="js/Libraries/jquery.mobile-1.1.0.min.js"></script>	
         <script type="text/javascript" src="js/Libraries/jquery-ui-1.8.18.custom.min.js"></script>
         <script type="text/javascript" src="js/Parsers/generatexml.js"></script>
-        <script type="text/javascript" src="js/Libraries/language.js"></script>
         <script type="text/javascript" src="js/Libraries/jquery.calendarPicker.js"></script>
         <!--Home Made-->
         <script type="text/javascript" src="js/force-orientation.js"></script>
@@ -30,27 +29,33 @@
                 <div class="banner"><img src="images/banner.jpg"/></div>
                 <div id="dsel1"></div><br>
                 <script type="text/javascript">
+            
+                    
 
 
                     var calendarPicker1 = $("#dsel1").calendarPicker({
-                        monthNames:["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"],
-                        dayNames: ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"],
+                        monthNames:["Jan", "Feb", "Mrt", "Apr", "Mei", "Jun", "Jul", "Aug", "Sep", "Okt", "Nov", "Dec"],
+                        dayNames: ["Zon", "Ma", "Di", "Woe", "Do", "Vrij", "Zat"],
                         callbackDelay:500,
+                        days:4,
                         callback:function(cal) {
+                            
                             var d = cal.currentDate;
                             var monthcheck = d.getMonth() + 1;
                             if(monthcheck<10)
-                                {
-                                    monthcheck = "0"+monthcheck;
-                                }
-                             var day = d.getDate();
-                                if(day<10){
-                                    day = "0"+day;
-                                }
+                            {
+                                monthcheck = "0"+monthcheck;
+                            }
+                            var day = d.getDate();
+                            if(day<10){
+                                day = "0"+day;
+                            }
                             var parsed = day + "/" + monthcheck + "/" + d.getFullYear();
                             generatexml(parsed);
                         }
                     });
+                    
+                    
                 </script>
                 <div id="container"></div>
             </div>

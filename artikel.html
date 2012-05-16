@@ -10,8 +10,8 @@
     <script type="text/javascript" src="js/Libraries/jquery-1.7.1.min.js"></script>
     <script src="js/Libraries/jquery.mobile-1.1.0.min.js"></script>
     <!--Home Made-->
-    <script type="text/javascript" src="js/force-orientation.js"></script>
     <script src="js/Parsers/generatedetaila.js"></script>
+    <script src="js/media.js"></script>
     <script type="text/javascript">		
         $(document).ready(function(){
             $.urlParam = function(name){
@@ -19,7 +19,9 @@
                 return results[1] || 0;
             }
            
-            var valoutput = decodeURIComponent($.urlParam('id'));
+            var valinput = decodeURIComponent($.urlParam('id'));
+            
+            var valoutput = valinput.replace("+"," ");
             getdetailsa(valoutput);
             $.ajax({                        
                 type: "GET",
@@ -62,40 +64,22 @@
     <title>Artikel</title>
 </head>
 <body>
-    <div id="fb-root"></div>
-    <script>(function(d, s, id) {
-        var js, fjs = d.getElementsByTagName(s)[0];
-        if (d.getElementById(id)) return;
-        js = d.createElement(s); js.id = id;
-        js.src = "//connect.facebook.net/nl_NL/all.js#xfbml=1";
-        fjs.parentNode.insertBefore(js, fjs);
-    }(document, 'script', 'facebook-jssdk'));</script>
     <div data-role="page">
         <div data-role="header" data-position="fixed">
             <a href="" data-icon="back" data-rel="back">back</a>
             <h1>Artikel</h1></div>
         <div data-role="content">
+
             <div class="banner"><img src="images/banner2.jpg"/></div>
-
-            <div id="container"></div>
-            <div id="social">
-                <ul>
-                    <li><div class="fb-like" data-send="false" data-width="300" data-show-faces="false"></div></li>
-                    <li><a href="https://twitter.com/share" class="twitter-share-button">Tweet</a>
-                        <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script></li>
-                    <li><!-- Plaats deze tag waar u de +1-knop wilt laten renderen. -->
-                    <g:plusone annotation="inline"></g:plusone>
-
-                    <!-- Plaats deze renderaanroep waar van toepassing. -->
-                    <script type="text/javascript">
-                    (function() {
-                        var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
-                        po.src = 'https://apis.google.com/js/plusone.js';
-                        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
-                    })();
-                    </script></li>
-                </ul>
+            <div id="social"> 
+                <a href="http://www.facebook.com/share.php?u=URL-TO-SHARE" onclick="return fb_like()" target="_blank"><img src="images/facebook.png"></a>
+                <div id="tweet"></div> 
+                <a href="#" onclick="gplus()"><img src="images/twitter.png"></a>
+                <div>
+                    <a href='javascript:void((function()%7Bvar%20e=document.createElement(&apos;script&apos;);e.setAttribute(&apos;type&apos;,&apos;text/javascript&apos;);e.setAttribute(&apos;charset&apos;,&apos;UTF-8&apos;);e.setAttribute(&apos;src&apos;,&apos;http://assets.pinterest.com/js/pinmarklet.js?r=&apos;+Math.random()*99999999);prompt(e)%7D)());'><img src='images/pinterest.png'/></a>
+                </div>
             </div>
+            <div id="container"></div>
         </div>
         <div data-role="footer" data-position="fixed">
             <div data-role="navbar">
@@ -107,6 +91,7 @@
             </div>
         </div>
     </div>
+    <script type="text/javascript" src="//assets.pinterest.com/js/pinit.js"></script>
 </body>
 </html>
 

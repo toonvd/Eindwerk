@@ -1,14 +1,13 @@
 <!DOCTYPE HTML>
 <head>
     <!-- screen formatting -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"/>
+    <meta name="viewport" content="width=device-width"/>
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="format-detection" content="telephone=no" />
     <link rel="apple-touch-icon" href="images/apple-touch-icon.png" />
-    <link rel="apple-touch-startup-image" href="images/landscape.png" media="only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:landscape)"  />
-    <link rel="apple-touch-startup-image" href="images/portrait.png" media="only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:portrait)" />
-    <link rel="stylesheet" href="css/jquery.mobile-1.1.0.min.css" />
     <link href="jquery.mobile.scrollview.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="css/jquery.mobile-1.1.0.min.css" />
+    
 
     <!--Javascript libraries-->
 
@@ -27,24 +26,22 @@
 <body>
     <div data-role="page">
         <div data-role="header" data-position="fixed"><h1>Home</h1></div>
-        
-            <div class="banner"><img src="images/banner2.jpg"/></div>
-            <div class="ui-grid-a">
-                <div class="ui-block-d" data-scroll="y"><div id="artikels"></div></div>
-                <div class="ui-block-e" data-scroll="y"><div id="concerten"></div></div>
-                <div class="ui-block-f" data-scroll="y"><div id="freestuff"></div></div>
-            </div>
-   
 
-        <div data-role="footer">
-            <div data-role="navbar">
-            <ul>
-                <li onclick="window.location.href='index.html'"><a href="">Home</a></li>
-                <li onclick="window.location.href='xml-parser.html'"><a href="">Calendar</a></li>
-                <li><a href="#">Three</a></li>
-            </ul>
+        <div class="banner"><img src="images/banner2.jpg"/></div>
+        <div class="ui-grid-a">
+            <div class="ui-block-d" data-scroll="y"><div id="artikels"></div></div>
+            <div class="ui-block-e" data-scroll="y"><div id="concerten"></div></div>
+            <div class="ui-block-f" data-scroll="y"><div id="freestuff"></div></div>
         </div>
-    </div>
+        <div data-role="footer" data-position="fixed">
+            <div data-role="navbar">
+                <ul>
+                    <li onclick="window.location.href='index.html'"><a href="">Home</a></li>
+                    <li onclick="window.location.href='xml-parser.html'"><a href="">Calendar</a></li>
+                    <li onclick="window.location.href='issues.html'"><a href="">Issues</a></li>
+                </ul>
+            </div>
+        </div>
     </div>
 </body>
 </html>
