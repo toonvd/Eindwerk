@@ -15,7 +15,7 @@ $(document).ready(function generatexml(){
                     line = '<hr /> <br />'
                     }
                 $('#artikels').append(line + '<div id="block" onclick="navigatea('+"'"+$(this).find('title').text()+"'"+')"><div id="title"><strong>'+$(this).find('title').text()+'</strong></div>'
-                    +'<div id="date">'+$(this).find('date').text()+'</div><div id="image"><img style="width:90%;" src="'+$(this).find('image').text()+'"alt="articleimage"/></div>'
+                    +'<div id="date">'+$(this).find('date').text()+'</div><div id="image"><img src="'+$(this).find('image').text()+'"alt="articleimage"/></div>'
                     +'<div id="content">'+$(this).find('shortcontent').text()+'</div></div><br />').trigger('create');	
                 counter++;
             })

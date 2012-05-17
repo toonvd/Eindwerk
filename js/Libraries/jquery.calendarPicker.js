@@ -152,7 +152,7 @@ jQuery.fn.calendarPicker = function(options) {
     }
 
 
-    fillYears(date);
+    
     fillMonths(date);
     list = new Array();
        $.ajax({

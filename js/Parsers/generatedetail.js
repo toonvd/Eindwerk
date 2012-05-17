@@ -7,7 +7,7 @@ function getdetails(artist){
             $(xml).find("concert").filter(function(){
                 return $(this).find("artist").text().indexOf(artist) === 0;
             }).each(function(){
-                $('#container').append('<div id="tabel"><div id="tabelimage_detail"><img src="'+$(this).find('image').text()+'"alt="articleimage"/></div>'
+                $('#container').append('<div id="tabel"><div id="tabelimage_detail"><img src="'+$(this).find('image').text()+'"alt="articleimage" id="image"/></div>'
 				
                     +'<div id="tabelartist_detail">'+$(this).find('artist').text()+'</div>'
                     +'<div id="tabellocation_detail">'+$(this).find('location').text()+'</div>'
