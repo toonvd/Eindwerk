@@ -1,14 +1,15 @@
 /*! jQuery Mobile v1.1.0 db342b1f315c282692791aa870455901fdb46a55 jquerymobile.com | jquery.org/license */
 @font-face {
     font-family: 'ClarendonTMedRegular';
-    src: url('./webfontkit-20120428-085933/clarendontmed-webfont.eot');
-    src: url('./webfontkit-20120428-085933/clarendontmed-webfont.eot?#iefix') format('embedded-opentype'),
-        url('./webfontkit-20120428-085933/clarendontmed-webfont.woff') format('woff'),
-        url('./webfontkit-20120428-085933/clarendontmed-webfont.ttf') format('truetype');
+    src: url('./clarendon/clarendontmed-webfont.eot');
+    src: url('./clarendon/clarendontmed-webfont.eot?#iefix') format('embedded-opentype'),
+        url('./clarendon/clarendontmed-webfont.woff') format('woff'),
+        url('./clarendon/clarendontmed-webfont.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 
 }
+
 .ui-bar-a{
     border:1px solid #333;
     background:#111;
@@ -145,7 +146,7 @@
     font-family:ClarendonTMedRegular;
     color:#8195a6;
     font-size:18px;
-    margin-left:5%;
+    padding-left:15px;
 	
 }
 .ui-grid-a .ui-block-d #artikels hr{
@@ -158,14 +159,14 @@
   
 }
 .ui-grid-a .ui-block-d #artikels #date{
-    font-family:Verdana, Geneva, sans-serif;
+    font-family:Arial, Helvetica, sans-serif;
     font-size:12px;
     color:#626773;
 	padding-left:15px;
 }
 
 .ui-grid-a .ui-block-d #artikels #content{
-    font-family:Verdana, Geneva, sans-serif;
+   font-family:Arial, Helvetica, sans-serif;
     color:#333535;
     font-size:14px;
     line-height:18px;
@@ -183,7 +184,7 @@
     padding-left:15px;
 }
 .ui-grid-a .ui-block-e #tabelhomepage #shortreview{
-    font-family: Verdana, Geneva, sans-serif;
+   font-family:Arial, Helvetica, sans-serif;
     color: #333535;
     font-size: 14px;
     line-height: 18px;
@@ -202,7 +203,7 @@
 }
 
 .ui-grid-a .ui-block-e #tabelhomepage #date{
-    font-family:Verdana, Geneva, sans-serif;
+   font-family:Arial, Helvetica, sans-serif;
     font-size:12px;
     color:#626773;
     padding-left:15px;}
@@ -221,7 +222,7 @@
     padding-left:15px;
 }
 .ui-grid-a .ui-block-f #stuff #content{
-	font-family: Verdana, Geneva, sans-serif;
+	font-family:Arial, Helvetica, sans-serif;
 	color: #333535;
 	font-size: 14px;
 	line-height: 18px;
@@ -255,25 +256,20 @@ strong{
     font-size:16px;
     padding-top:2%;
     padding-bottom:2%;}
-#image_article{
-    width:635px;
-    height:300px;
-    margin: 0 auto;
-}
+
 #content_article{
     padding-top:5%;
     color:#1e1e1e;
     font-family:Arial, Helvetica, sans-serif;
     font-size:14px;
     line-height:27px;
-    width:420px;
+    width:600px;
     margin: 0 auto;
 }
 iframe{ display: block; margin: 0 auto; }
 #social{
-   margin:0 auto;
    position:relative;
-   left:15%;
+   left:15px;
    padding-bottom:3%;
 }
 
@@ -296,14 +292,15 @@ iframe{ display: block; margin: 0 auto; }
 #tabel #tabelartist_detail{
     color:#1e1e1e;
     font-family:ClarendonTMedRegular;
-    font-size:48px;
+    font-size:38px;
 }
 
 #tabel #tabelurl_detail a{
-    font-family:ClarendonTMedRegular; 
+    font-family:Arial, Helvetica, sans-serif; 
     color:#B6A43D;
     text-decoration:none;
     font-weight:normal;
+	padding-top:25px;
    
 }
  #tabel #longreview{
@@ -316,6 +313,12 @@ iframe{ display: block; margin: 0 auto; }
 	padding-left:15px;
 	padding-top:25px;
 }
+#tabel #tabellocation_detail{
+	 padding-top:10px;
+    font-size:14px;
+    font-family:ClarendonTMedRegular;
+  	 padding-left:15px;
+	}
 .ui-content.ui-scrollview-clip {
     padding: 0;
 }

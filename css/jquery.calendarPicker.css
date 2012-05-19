@@ -1,20 +1,20 @@
 @font-face {
     font-family: 'ClarendonTMedRegular';
-    src: url('./webfontkit-20120428-085933/clarendontmed-webfont.eot');
-    src: url('./webfontkit-20120428-085933/clarendontmed-webfont.eot?#iefix') format('embedded-opentype'),
-        url('./webfontkit-20120428-085933/clarendontmed-webfont.woff') format('woff'),
-        url('./webfontkit-20120428-085933/clarendontmed-webfont.ttf') format('truetype');
+    src: url('./clarendon/clarendontmed-webfont.eot');
+    src: url('./clarendon/clarendontmed-webfont.eot?#iefix') format('embedded-opentype'),
+        url('./clarendon/clarendontmed-webfont.woff') format('woff'),
+        url('./clarendon/clarendontmed-webfont.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 
 }
-
 @font-face {
-    font-family: 'BebasRegular';
-    src: url('bebas___-webfont.eot');
-    src: url('bebas___-webfont.eot?#iefix') format('embedded-opentype'),
-         url('bebas___-webfont.woff') format('woff'),
-         url('bebas___-webfont.ttf') format('truetype');
+    font-family: 'FranchiseRegular';
+    src: url('./franchise/franchise-bold-webfont.eot');
+    src: url('./franchise/franchise-bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('./franchise/franchise-bold-webfont.woff') format('woff'),
+         url('./franchise/franchise-bold-webfont.ttf') format('truetype'),
+         url('./franchise/franchise-bold-webfont.svg#FranchiseRegular') format('svg');
     font-weight: normal;
     font-style: normal;
 
@@ -24,7 +24,7 @@
   -moz-border-radius: 4px;
   text-align: center;
   color: #4a4a4a;
-  font-family:'BebasRegular';
+ font-family: FranchiseRegular;
   width:100%;
   
 }
@@ -50,7 +50,7 @@ width:100%;}
 
 .calMonth .calElement {
   font-size: 14px;
-  border: 1px solid #999999;
+  border: 1px solid #CED1D3;
   width: 13%;
   height: 40px;
   font-family:Arial, Helvetica, sans-serif;
@@ -60,11 +60,11 @@ width:100%;}
 }
 
 .calDay {
-font-family:Arial, Helvetica, sans-serif;
+font-family: FranchiseRegular;
 }
 
 .calDay .calElement {
-  font-size: 12px;
+  font-size: 20px;
   border: 1px solid #CED1D3;;
   width:10%;
   height:60px;
@@ -89,7 +89,7 @@ span.calElement.next:hover, span.calElement.prev:hover {
 }
 
 .calDay .calElement .dayNumber {
-  font-size: 20px;
+  font-size: 40px;
  
 }
 
