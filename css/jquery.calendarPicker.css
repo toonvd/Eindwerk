@@ -71,7 +71,7 @@ font-family: FranchiseRegular;
 }
 
 .calDay .calElement.prev {
-  background: transparent url(../images/arrow-calendar-back.png) no-repeat 0 ;
+  background: transparent url(../images/back.png) no-repeat 0 ;
   width:5%;
   border: 1px solid #999999;
  border:none;
@@ -79,9 +79,10 @@ font-family: FranchiseRegular;
 }
 
 .calDay .calElement.next {
-  background: transparent url(../images/arrow-calendar-forward.png) no-repeat 0 18px;
- border:none;
- margin-left:5%;
+background: transparent url(../images/next.png) no-repeat 0 ;
+  width:5%;
+  border: 1px solid #999999;
+ border:none
 }
 
 span.calElement.next:hover, span.calElement.prev:hover {
@@ -118,13 +119,15 @@ span.calElement:hover {
 	padding-bottom:15px;
 	
 }
-#tabelimage{
+#tabelimage img{
 	float:left;
 	padding-right:15px;
 	padding-left:30px;
+	width:100px;
 }
 #tabellocation{
 	color:#1e1e1e;
 	font-size:16px;
 	font-family:ClarendonTMedRegular;
+	margin-bottom: 40px;
 	 }

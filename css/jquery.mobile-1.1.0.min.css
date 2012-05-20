@@ -209,30 +209,34 @@
     padding-left:15px;}
 
 /*----FREE STUFF-----*/
-.ui-grid-a .ui-block-f #stuff #titlestuff{
+.ui-grid-a .ui-block-f #freestuff #stuff #titlestuff{
     font-family:ClarendonTMedRegular;
     color:#1f1426;
     font-size:18px;
     padding-left:15px;
+	text-align:left;
 }
-.ui-grid-a .ui-block-f #stuff #detail{
+.ui-grid-a .ui-block-f  #freestuff #stuff #detail{
     font-family:ClarendonTMedRegular;
     color:#1f1426;
     font-size:14px;
     padding-left:15px;
+	text-align:left;
 }
-.ui-grid-a .ui-block-f #stuff #content{
+.ui-grid-a .ui-block-f #freestuff #stuff #content{
 	font-family:Arial, Helvetica, sans-serif;
-	color: #333535;
+	color:#333535;
 	font-size: 14px;
 	line-height: 18px;
 	padding-left:15px;
 	width: 200px;
 	text-shadow: 0 1px 0 white;
+	margin:0;
 }
-.ui-grid-a .ui-block-f #stuff #image{
+.ui-grid-a .ui-block-f  #freestuff #stuff #image img{
 	padding-left:15px;
-   	margin-top:5%;
+	width:300px;
+	margin-top: 5%;
 	}
 
 /*------ARTIKELPAGINA DETAIL------*/
@@ -352,7 +356,42 @@ iframe{ display: block; margin: 0 auto; }
 .ui-content.ui-scrollview-clip > .ui-listview.ui-scrollview-view {
     margin: 0;
 }
+/* ---- FREE STUFF PAGE----*/
+#freestuff #stuff #titlestuff{
+	font-family:ClarendonTMedRegular;
+    color:#1f1426;
+    font-size:32px;
+    padding-left:15px;
+	text-align:center;
+	}
+#freestuff #stuff #image img{
+	width:30%;
+	padding-left:37%;
+	
+}
 
+#freestuff #stuff #content{
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:14px;
+	line-height:27px;
+	color:#1e1e1e;
+	width:80%;
+	padding-left:15px;
+	padding-top:25px;
+	margin:0 auto;
+	
+	}
+#freestuff #stuff #detail{
+	 width:100%;
+   	padding-left:15px;
+	padding-bottom:25px;
+    font-family:Arial, Helvetica, sans-serif;
+    color:#adb3b5;
+    font-size:16px;
+    padding-top:2%;
+    padding-bottom:2%;
+	text-align:center;
+	}
 /*Einde eigen css
 */
 
