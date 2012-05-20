@@ -5,19 +5,19 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"/>
         <meta name="apple-mobile-web-app-capable" content="yes">
         <meta name="format-detection" content="telephone=no" />
-        <link rel="stylesheet" href="style/add2home.css">
         <link rel="apple-touch-icon" href="images/apple-touch-icon.png" />
         <link rel="apple-touch-startup-image" href="images/landscape.png" media="only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:landscape)"  />
         <link rel="apple-touch-startup-image" href="images/portrait.png" media="only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:portrait)" />
         <link rel="stylesheet" href="css/jquery.mobile-1.1.0.min.css" />
         <!--Javascript libraries-->
+         <script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false"></script>
         <script type="text/javascript" src="js/Libraries/jquery-1.7.1.min.js"></script>
         <script src="js/Libraries/jquery.mobile-1.1.0.min.js"></script>
+        <script src="js/Libraries/jquery.ui.map.js"></script>
+        <script src="js/Libraries/jquery.ui.map.microdata.js"></script>
         <!--Home Made-->
-        <script src="js/Parsers/generatedetail.js"></script>
-        <script type="text/javascript" src="js/force-orientation.js"></script>
-        <script type="text/javascript">
-		
+        <script src="js/Parsers/generatedetail.js"></script>    
+        <script type="text/javascript">	
             $(document).ready(function(){
                 $.urlParam = function(name){
                     var results = new RegExp('[\\?&]' + name + '=([^&#]*)').exec(window.location.href);
@@ -25,10 +25,17 @@
                 }
                 var valoutput = decodeURIComponent($.urlParam('id'));  
                 getdetails(valoutput);
-				
-				
-            });
-            
+    $('#map_canvas').gmap(
+        { 'center' : new google.maps.LatLng(51.03,4.47),
+          'zoom' : 14,
+          'mapTypeControl' : true,
+          'navigationControl' : true,
+          'streetViewControl' : true
+        })
+        
+
+});
+
         </script>
         <title>detail</title>
         <!-- End Declarations -->
@@ -42,6 +49,7 @@
             <div data-role="content">
                 <div class="banner"><img src="images/banner.jpg"/></div>
                 <div id="container"></div>
+                <div id="map_canvas" style="width:500px;height:500px;"></div>
             </div>
             <div data-role="footer" data-position="fixed">
                 <div data-role="navbar">

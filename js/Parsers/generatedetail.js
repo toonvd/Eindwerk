@@ -15,12 +15,14 @@ function getdetails(artist){
                     +'<div id="longreview">'+$(this).find('longreview').text()+'</div>'
                     ).trigger('create');
             })
-                  $('#map_canvas').bind('init', function() {
-            $('#map_canvas').gmap('addMarker',
-                { 'position':new google.maps.LatLng(51.03,4.47),
-                  'animation' : google.maps.Animation.DROP
- });
-            });
+            tester = 51.03;
+            test = 4.47;
+                 $('#map_canvas').bind('init', function() {
+            $('#map_canvas').gmap('addMarker', { 'position':  tester+','+test}).click(function() {
+                $('#map_canvas').gmap('openInfoWindow', { 'content': 'TEXT_AND_HTML_IN_INFOWINDOW' }, this);
+        }); 
+        });
+ 
     }
     })
 }
