@@ -279,6 +279,23 @@ iframe{ display: block; margin: 0 auto; }
 	padding: 1%;
 }
 
+#showhide{
+	text-decoration: none;
+	color: #8195A6;
+	font-weight: normal;
+	font-size: 12px;
+	width: 600px;
+	padding-top: 20px;
+	margin: 0 auto;
+	
+	}
+#comments
+{
+    width: 600px;
+    margin: 5px auto;
+    text-align:left;
+    
+}
 
 /*-----CONCERTENPAGINA DETAIL-----*/
 #tabel #tabelimage_detail{
@@ -338,10 +355,7 @@ iframe{ display: block; margin: 0 auto; }
 .ui-content.ui-scrollview-clip > .ui-listview.ui-scrollview-view {
     margin: 0;
 }
-#comments
-{
-    margin: 0 auto;
-}
+
 /*Einde eigen css
 */
 

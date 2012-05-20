@@ -66,11 +66,11 @@
         function showhide(){
           if ($('#comments:visible').length > 0)
               {
-                  $('#comments').hide("fast");
+                  $('#comments').hide();
               }
               else
                   {
-                       $('#comments').show("fast");
+                       $('#comments').show();
                   }
               
     }
@@ -118,7 +118,7 @@
                 <li><a href="#" onclick="gplus()"><img src="images/googleplus.png"></a></li>
             </ul>
             </div>
-            <a href="" onclick="showhide()">comments weergeven/verbergen</a>
+            <div id="showhide" onclick="showhide()">comments weergeven/verbergen</div>
              <div id="comments"></div>
         </div>
         <div data-role="footer" data-position="fixed">
