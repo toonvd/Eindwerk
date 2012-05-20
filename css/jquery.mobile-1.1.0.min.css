@@ -289,13 +289,10 @@ iframe{ display: block; margin: 0 auto; }
 	margin: 0 auto;
 	
 	}
-#comments
-{
+#comments{
     width: 600px;
-    margin: 5px auto;
-    text-align:left;
-    
-}
+   	margin-left: 50px;
+ }
 
 /*-----CONCERTENPAGINA DETAIL-----*/
 #tabel #tabelimage_detail{
