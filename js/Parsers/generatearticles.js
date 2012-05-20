@@ -1,6 +1,6 @@
-function navigatea(artist)
+function navigatea(position)
 {
-window.location.href="artikel.html?id="+encodeURIComponent(artist);	
+window.location.href="artikel.html?count="+position;	
 }
 $(document).ready(function generatexml(){
     $.ajax({                        
@@ -14,7 +14,7 @@ $(document).ready(function generatexml(){
                 if(counter > 0){
                     line = '<hr /> <br />'
                     }
-                $('#artikels').append(line + '<div id="block" onclick="navigatea('+"'"+$(this).find('title').text()+"'"+')"><div id="title"><strong>'+$(this).find('title').text()+'</strong></div>'
+                $('#artikels').append(line + '<div id="block" onclick="navigatea('+"'"+$(this).index()+"'"+')"><div id="title"><strong>'+$(this).find('title').text()+'</strong></div>'
                     +'<div id="date">'+$(this).find('date').text()+'</div><div id="image"><img src="'+$(this).find('image').text()+'"alt="articleimage"/></div>'
                     +'<div id="content">'+$(this).find('shortcontent').text()+'</div></div><br />').trigger('create');	
                 counter++;

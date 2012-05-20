@@ -338,7 +338,10 @@ iframe{ display: block; margin: 0 auto; }
 .ui-content.ui-scrollview-clip > .ui-listview.ui-scrollview-view {
     margin: 0;
 }
-
+#comments
+{
+    margin: 0 auto;
+}
 /*Einde eigen css
 */
 
