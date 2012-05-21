@@ -27,12 +27,22 @@
                 var valoutput = decodeURIComponent($.urlParam('id'));
                       
             getdetails(valoutput);
-      
-                
-    
-        
-
-});
+          $('#map_canvas').hide();
+});  
+        function showhide(){
+          if ($('#map_canvas:visible').length > 0)
+              {
+                  
+                  $('#map_canvas').hide();
+              }
+              else
+                  {
+                     
+                       $('#map_canvas').show();
+                        $('#map_canvas').gmap('refresh');
+                  }
+              
+    }
 
         </script>
         
@@ -51,6 +61,7 @@
             <div data-role="content">
                 <div class="banner"><img src="images/banner.jpg"/></div>
                 <div id="container"></div>
+                <div id="moreinfo" onclick="showhide()">Meer info...</div>
                 <div id="map_canvas" style="width:500px;height:500px;"></div>
             </div>
             <div data-role="footer" data-position="fixed">
