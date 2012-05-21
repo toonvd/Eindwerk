@@ -331,22 +331,23 @@ iframe{ display: block; margin: 0 auto; }
 	clear:left;
 	padding-left:15px;
 	padding-top:25px;
+	padding-bottom:25px;
 }
-#tabel #tabellocation_detail{
+#concertinfo #tabellocation_detail{
 	padding-top:10px;
     font-size:14px;
     font-family:ClarendonTMedRegular;
   	padding-left:15px;
 	 color:#626773;
 	}
-#tabel #tabeldate_detail{
+#concertinfo #tabeldate_detail{
 	padding-top:10px;
     font-size:14px;
     font-family:ClarendonTMedRegular;
   	padding-left:15px;
 	color:#626773;
 }
-#tabel #tabelhour_detail{
+#concertinfo #tabelhour_detail{
 	padding-top:10px;
     font-size:14px;
     font-family:ClarendonTMedRegular;
@@ -354,19 +355,38 @@ iframe{ display: block; margin: 0 auto; }
 	color:#626773;
 }
 
-#tabel #soldout_detail{
+#concertinfo #souldout_detail{
 	font-family:Arial, Helvetica, sans-serif;
     font-size:14px;
     color:red;
 	padding-left:15px;
 	text-transform:uppercase;
+	padding-top:10px;
+
 	}
-#tabel #ticket_detail{
+#concertinfo #ticket_detail{
 	padding-top:10px;
     font-size:14px;
     font-family:ClarendonTMedRegular;
   	padding-left:15px;
 	 color:#626773;
+}
+#moreinfo{
+	padding-left:15px;
+	padding-bottom:15px;
+	padding-top: 32px;
+    font-size:14px;
+    font-family:ClarendonTMedRegular;
+  	color:#B6A43D;
+	text-decoration:none;
+	font-weight:normal;}
+#concertinfo{
+	padding-left:5px;
+	padding-bottom:15px;
+}
+#map_canvas{
+	padding-left:15px;
+	margin-bottom:10px;
 }
 .ui-content.ui-scrollview-clip {
     padding: 0;
