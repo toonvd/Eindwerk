@@ -36,10 +36,18 @@ function getdetails(artist){
             }).each(function(){
                 $('#container').append('<div id="tabel"><div id="tabelimage_detail"><img src="'+$(this).find('image').text()+'"alt="articleimage" id="image"/></div>'
 
-                    +'<div id="tabelartist_detail">'+$(this).find('artist').text()+'</div>'
-                    +'<div id="tabellocation_detail">'+$(this).find('location').text()+'</div>'
-                    +'<div id="tabelurl_detail"><a href="'+$(this).find('url').text()+'">'+$(this).find('url').text()+'</a></div>'
-                    +'<div id="longreview">'+$(this).find('longreview').text()+'</div>'
+                    +'<div id="tabelartist_detail">'+$(this).find('artist').text()+'</div>'	  
+					+'<div id="tabelurl_detail"><a href="'+$(this).find('url').text()+'">'+$(this).find('location').text()+'</a></div>'
+					+'<div id="longreview">'+$(this).find('longreview').text()+'</div>'
+					
+					+'<div id="concertinfo">s<div id="tabeldate_detail">'+$(this).find('date').text()
+						+'<div id="tabelhour_detail">'+'Aanvangsuur: '+$(this).find('hour').text()
+						+'<div id="tabellocation_detail">'+$(this).find('location').text()
+						
+						+'<div id="souldout_detail">'+$(this).find('soldout').text()
+						+'<div id="ticket_detail">'+$(this).find('ticketprice').text()+
+					'</div>'
+					
                     ).trigger('create');
                 adres = $(this).find('adres').text();
                 parseLocation(adres, function(lat1, lng1){

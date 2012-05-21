@@ -314,11 +314,12 @@ iframe{ display: block; margin: 0 auto; }
 }
 
 #tabel #tabelurl_detail a{
-    font-family:Arial, Helvetica, sans-serif; 
-    color:#B6A43D;
-    text-decoration:none;
-    font-weight:normal;
-	padding-top:25px;
+  	padding-top:10px;
+    font-size:14px;
+    font-family:ClarendonTMedRegular;
+  	color:#B6A43D;
+	text-decoration:none;
+	font-weight:normal;
    
 }
  #tabel #longreview{
@@ -332,11 +333,41 @@ iframe{ display: block; margin: 0 auto; }
 	padding-top:25px;
 }
 #tabel #tabellocation_detail{
-	 padding-top:10px;
+	padding-top:10px;
     font-size:14px;
     font-family:ClarendonTMedRegular;
-  	 padding-left:15px;
+  	padding-left:15px;
+	 color:#626773;
 	}
+#tabel #tabeldate_detail{
+	padding-top:10px;
+    font-size:14px;
+    font-family:ClarendonTMedRegular;
+  	padding-left:15px;
+	color:#626773;
+}
+#tabel #tabelhour_detail{
+	padding-top:10px;
+    font-size:14px;
+    font-family:ClarendonTMedRegular;
+  	padding-left:15px;
+	color:#626773;
+}
+
+#tabel #soldout_detail{
+	font-family:Arial, Helvetica, sans-serif;
+    font-size:14px;
+    color:red;
+	padding-left:15px;
+	text-transform:uppercase;
+	}
+#tabel #ticket_detail{
+	padding-top:10px;
+    font-size:14px;
+    font-family:ClarendonTMedRegular;
+  	padding-left:15px;
+	 color:#626773;
+}
 .ui-content.ui-scrollview-clip {
     padding: 0;
 }

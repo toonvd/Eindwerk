@@ -18,7 +18,10 @@ function generatexml(dateText){
             }).each(function(){
                 $('#container').append('<div id="tabel" onclick="navigate('+"'"+$(this).find('artist').text()+"'"+')"><div id="tabelimage"><img src="'+$(this).find('image').text()+'"/></div>'
                     +'<div id="tabelartist">'+$(this).find('artist').text()+'</div>'
+					+'<div id="tabeldate">'+$(this).find('date').text()+'</div>'
+					
                     +'<div id="tabellocation">'+$(this).find('location').text()+'</div>'
+					
                     ).trigger('create');
                 counter++;
   

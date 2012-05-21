@@ -18,7 +18,7 @@ $(document).ready(function generatexml(){
 					+'<div id="date">'+$(this).find('date').text()+'</div>'
 					+'<div id="tabelimage"><img src="'+$(this).find('image').text()+'"alt="articleimage"/></div>'
                    	+'<div id="location">'+$(this).find('location').text()+'</div>'
-                    +'<div id="shortreview">'+$(this).find('shortreview').text()+'</div>').trigger('create');
+					+'<div id="shortreview">'+$(this).find('shortreview').text()+'</div>').trigger('create');
                 counter ++;
             })
         }

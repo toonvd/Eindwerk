@@ -8,10 +8,12 @@
     <concertname/>
     <image>http://www.handelsbeurs.be/frontend/files/events/700/300x200/1335426686.jpg</image>
     <date>24/03/2012</date>
+	<hour>20.00u</hour>
     <ticketprice>&#x20AC; 25</ticketprice>
     <ticketurl>http://www.ticketshop.be</ticketurl>
     <url>http://www.test.be</url>
     <adres>17,weiveld,Buggenhout,België</adres>
+	<soldout>Sold out!</soldout>
   </concert>
   <concert>
     <artist>Matthew Dear</artist>
@@ -20,9 +22,12 @@
     <concertname/>
     <image>http://planetshhh.com/wp-content/uploads/2010/09/Matthew-Dear.jpg</image>
     <date>01/05/2012</date>
+	<hour>22.00u</hour>
     <ticketprice>&#x20AC; 50</ticketprice>
     <ticketurl>http://www.ticketshop.be</ticketurl>
     <url>http://www.abconcerts.be/</url>
+	<adres>110,Anspachlaan,Brussel,België</adres>
+	<soldout></soldout>
   </concert>
   <concert>
     <artist>Sky Castles, The Agreement, Vienna, Buurman, Steak Number Eight, The Kids</artist>
@@ -31,9 +36,12 @@
     <concertname>Astridpark, Brugge</concertname>
     <image>http://upload.wikimedia.org/wikipedia/commons/thumb/e/e3/Steak_Number_Eight_by_Eva_Vlonk.jpg/264px-Steak_Number_Eight_by_Eva_Vlonk.jpg</image>
     <date>01/05/2012</date>
+	<hour></hour>
     <ticketprice>&#x20AC; 50</ticketprice>
     <ticketurl>http://www.ticketshop.be</ticketurl>
     <url>http://www.redrockrally.be/</url>
+	<adres>1,Minderbroedersstraat,Brugge,België</adres>
+	<soldout></soldout>
   </concert>
   <concert>
     <artist>Sound of stereo</artist>
@@ -42,9 +50,12 @@
     <concertname>test</concertname>
     <image>http://villabota.be/sites/villabota.be/files/nieuws/soundofstereo.jpg?1332943924</image>
     <date>05/05/2012</date>
+	<hour>20.00u</hour>
     <ticketprice>&#x20AC; 25</ticketprice>
     <ticketurl>http://www.ticketshop.be</ticketurl>
     <url>http://www.hetdepot.be/</url>
+	<adres>47,Kapucijnenvoer,Leuven,België</adres>
+	<soldout>Sold out!</soldout>
   </concert>
   <concert>
     <artist>Cool presents Quantic and Alice Russell</artist>
@@ -53,8 +64,11 @@
     <concertname/>
     <image>http://t3.gstatic.com/images?q=tbn:ANd9GcRzJ-z8s3XAAzJ7DkqivocqMmb-SuaGh908hAnbYH6ozBHJq6MEkkXK4CkmVg</image>
     <date>18/05/2012</date>
+	<hour>19.30u</hour>
     <ticketprice>&#x20AC;20</ticketprice>
     <ticketurl>http://www.ticketshop.be</ticketurl>
     <url>http://www.hetdepot.be/</url>
+	<adres>47,Kapucijnenvoer,Leuven,België</adres>
+	<soldout></soldout>
   </concert>
 </concerts>

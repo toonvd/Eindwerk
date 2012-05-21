@@ -28,6 +28,7 @@
                       
             getdetails(valoutput);
           $('#map_canvas').hide();
+		  $('#concertinfo').hide();
 });  
         function showhide(){
           if ($('#map_canvas:visible').length > 0)
@@ -40,6 +41,7 @@
                      
                        $('#map_canvas').show();
                         $('#map_canvas').gmap('refresh');
+						$('#concertinfo').show();
                   }
               
     }
@@ -63,6 +65,7 @@
                 <div id="container"></div>
                 <div id="moreinfo" onclick="showhide()">Meer info...</div>
                 <div id="map_canvas" style="width:500px;height:500px;"></div>
+                <div id="concertinfo"></div>
             </div>
             <div data-role="footer" data-position="fixed">
                 <div data-role="navbar">
