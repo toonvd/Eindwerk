@@ -37,12 +37,7 @@ width:100%;}
   overflow:hidden;
 }
 
-.calYear .calElement {
- font-family: Arial, Helvetica, sans-serif;
- font-size: 20px;
- width:25%;
- border: 1px solid #999999;
-}
+
 
 .calMonth {
  
@@ -53,7 +48,7 @@ width:100%;}
   border: 1px solid #CED1D3;
   width: 13%;
   height: 40px;
-  font-family:Arial, Helvetica, sans-serif;
+  font-family: FranchiseRegular;
   line-height: 40px;
   
 
@@ -96,7 +91,7 @@ span.calElement.next:hover, span.calElement.prev:hover {
 
 
 .calElement.selected {
-  background-color: #b6a43d;
+  border: 2px solid #B6A43D;
   
 }
 
@@ -108,26 +103,33 @@ span.calElement:hover {
   
 }
 .calElement.concert{
- border: 2px solid #B6A43D;
-  -moz-border-radius: 3px
+    background:#DFCC5E;
+     -moz-border-radius: 3px
 }
 #tabelartist{
 	color:#b6a43d;
 	font-size:28px;
 	font-family:ClarendonTMedRegular; 
 	width:600px;
-	padding-bottom:15px;
+    padding-bottom:10px;
+	
 	
 }
 #tabelimage img{
 	float:left;
 	padding-right:15px;
 	padding-left:30px;
-	width:100px;
+	width:150px;
 }
 #tabellocation{
 	color:#1e1e1e;
 	font-size:16px;
 	font-family:ClarendonTMedRegular;
 	margin-bottom: 40px;
-	 }
+    padding-top:10px;
+}
+#tabeldate{
+      font-family:Arial, Helvetica, sans-serif;
+    color:#adb3b5;
+    font-size:16px;
+}

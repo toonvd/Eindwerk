@@ -155,8 +155,6 @@
 .ui-grid-a .ui-block-d #artikels #image img{
    padding-left:15px;
    margin-top:5%;
-   width:250px;
-  
 }
 .ui-grid-a .ui-block-d #artikels #date{
     font-family:Arial, Helvetica, sans-serif;
@@ -168,7 +166,7 @@
 .ui-grid-a .ui-block-d #artikels #content{
    font-family:Arial, Helvetica, sans-serif;
     color:#333535;
-    font-size:14px;
+    font-size:15px;
     line-height:18px;
     padding-left:15px;
     width:200px;
@@ -226,7 +224,7 @@
 .ui-grid-a .ui-block-f #freestuff #stuff #content{
 	font-family:Arial, Helvetica, sans-serif;
 	color:#333535;
-	font-size: 14px;
+	font-size: 15px;
 	line-height: 18px;
 	padding-left:15px;
 	width: 200px;
@@ -235,7 +233,6 @@
 }
 .ui-grid-a .ui-block-f  #freestuff #stuff #image img{
 	padding-left:15px;
-	width:300px;
 	margin-top: 5%;
 	}
 
@@ -265,8 +262,8 @@ strong{
     padding-top:5%;
     color:#1e1e1e;
     font-family:Arial, Helvetica, sans-serif;
-    font-size:14px;
-    line-height:27px;
+    font-size:15px;
+    line-height:22px;
     width:600px;
     margin: 0 auto;
 }
@@ -413,20 +410,21 @@ iframe{ display: block; margin: 0 auto; }
     color:#1f1426;
     font-size:32px;
     padding-left:15px;
+	padding-top:15px;
 	text-align:center;
 	}
 #freestuff #stuff #image img{
-	width:30%;
-	padding-left:37%;
+	margin-left:25%;
+	width:50%;
 	
 }
 
 #freestuff #stuff #content{
 	font-family:Arial, Helvetica, sans-serif;
-	font-size:14px;
-	line-height:27px;
+	font-size:15px;
+	line-height:22px;
 	color:#1e1e1e;
-	width:80%;
+	width:60%;
 	padding-left:15px;
 	padding-top:25px;
 	margin:0 auto;
@@ -441,6 +439,68 @@ iframe{ display: block; margin: 0 auto; }
     font-size:16px;
     padding-top:2%;
     padding-bottom:2%;
+	text-align:center;
+	}
+/*-----ISSUES-----*/
+#titleissue{
+	font-family:ClarendonTMedRegular;
+    color:#214F69;
+    font-size:32px;
+    padding-left:15px;
+	text-align:center;
+	padding-top:15px;
+}
+#coverimage{
+	margin-left:37%;
+	padding-top:15px;
+	padding-bottom:15px;
+}
+#issue_date{
+	text-align:center;
+	 width:100%;
+    text-align:center;
+    font-family:Arial, Helvetica, sans-serif;
+    color:#adb3b5;
+    font-size:16px;
+    padding-top:2%;
+    padding-bottom:2%
+}
+#downloadbtn{
+-webkit-border-radius: 3px;
+-moz-border-radius: 3px;
+border-radius: 3px;
+-moz-background-clip: padding;
+-webkit-background-clip: padding-box;
+background-clip: padding-box;
+-webkit-border-radius: 3px;
+-moz-border-radius: 3px;
+border-radius: 3px;
+-moz-background-clip: padding;
+-webkit-background-clip: padding-box;
+background-clip: padding-box;
+border: 2px solid #adb3b5;
+display: inline-block;
+padding: 15px;
+text-align: center;
+text-transform: uppercase;
+
+-moz-background-clip: border;
+-webkit-background-clip: border-box;
+background-clip: border-box;
+text-decoration: none;
+ font-family:Arial, Helvetica, sans-serif;
+ color:#214F69;
+ margin-left:42%;
+}
+#uitleg{
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:15px;
+	line-height:22px;
+	color:#1e1e1e;
+	width:80%;
+	padding-left:15px;
+	padding-bottom:15px;
+	margin:0 auto;
 	text-align:center;
 	}
 /*Einde eigen css

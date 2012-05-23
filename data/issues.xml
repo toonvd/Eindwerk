@@ -1,10 +1,11 @@
 <?xml version="1.0"?>
 <issues>
     <issue>
+		<title>The may issue!</title>
         <image>images/12-05-vl.jpg</image>
         <file>images/online-ezine-nl.pdf</file>
-        <date>Mei</date>
-        <text>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris mollis ornare velit eget posuere. Nullam nisi ante, aliquam ut dignissim in, facilisis at sapien. Vestibulum et ligula id lacus malesuada varius. Fusce gravida fringilla eros congue mattis. Ut sed metus id purus vestibulum consequat. Ut semper eros ut velit placerat vel dapibus tortor volutpat. Fusce in felis nulla, eget vulputate augue. Nullam congue tortor consectetur dolor commodo ut rhoncus eros consequat. Mauris tincidunt cursus dolor, nec accumsan ante rhoncus sit amet. Integer sollicitudin lacus non augue elementum id congue sem feugiat. Phasellus in porttitor purus. Phasellus non metus at enim condimentum ornare sit amet ut augue. Suspendisse accumsan turpis ut turpis placerat in lobortis eros sodales.</text>
+        <date>Mei 2012</date>
+        <text>Mei-editie met interviews met Django Django, Patrick Watson, Mariee Sioux, Beach House, Lee Ranaldo,Tu Fawning, Here We Go Magic en Gravenhurst. Homegrown-pagina met Hong Kong Dong en Duyster 500. Enjoy!  </text>
     </issue>
     <issue>
         <image>images/12-05-vl.jpg</image>
