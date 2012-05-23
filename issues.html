@@ -14,8 +14,6 @@
     <script src="js/Parsers/generateissues.js"></script>
     <script type="text/javascript">		
         $(document).ready(function(){
-           
-            getdetailsi('test');
             $.ajax({                        
                 type: "GET",
                 url: "data/issues.xml",
@@ -29,6 +27,7 @@
             })
             
             var i = 0;
+            getNode(i);
             $('body').live('swipeleft swiperight',function(event){
                 if (event.type == "swipeleft") {
                     if(i == 0)
