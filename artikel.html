@@ -35,9 +35,11 @@
                     {
                         return $(this).children().length === 0;
                     }).length;
+                    alert("pagina "+i+" van "+ count);
                 }
             })
             var i = decodeURIComponent($.urlParam('count'));
+             
             $('body').live('swipeleft swiperight',function(event){
                 if (event.type == "swipeleft") {
                     if(i == 0)
@@ -58,7 +60,7 @@
                         i++;
                     navigate(i);
                 }
-                         
+                     s
             });
         });
     </script>

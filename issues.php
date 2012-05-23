@@ -69,13 +69,14 @@
              <div data-role="content">
                  <div id="issues"></div>
              </div>
+             <div id="uitleg"></div>
              <div data-role="footer" data-position="fixed">
             <div data-role="navbar">
                 <ul>
                     <li onclick="window.location.href='index.html'"><a href="">Update!</a></li>
                     <li onclick="window.location.href='xml-parser.html'"><a href="">Kalender</a></li>
                     <li onclick="window.location.href='freestuff.html'"><a href="">Free Stuff</a></li>
-                    <li onclick="window.location.href='issues.html'"><a href="">Magazine</a></li>
+                    <li onclick="window.location.href='issues.php'"><a href="">Magazine</a></li>
                 </ul>
             </div>
         </div>

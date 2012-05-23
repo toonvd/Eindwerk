@@ -9,6 +9,8 @@ function getNode(id) {
                         $('#issues').append('<div id="block"><div id="title"><strong>'+oIssue.find('title').text()+'</strong></div>'
                     +'<div id="date">'+oIssue.find('date').text()+'</div><div id=""><img src="'+oIssue.find('image').text()+'"alt="articleimage"/></div>'
                     +'<div id="content"><a href="" onclick="window.location.href='+"'"+'download.php?f='+oIssue.find('file').text()+"'"+'">deze maand</a></div></div><br />').trigger('create');
-                    }
+                    $('#uitleg').empty(); 
+                    $('#uitleg').append(oIssue.find('text').text()).trigger('create');
+                }
                 })
             }
