@@ -63,9 +63,10 @@
     </head>
     <body>
          <div data-role="page">
-        <div data-role="header" data-position="fixed">
-            <h1>Issues</h1>
-            </div>
+         <div data-role="header" data-position="fixed"><h1>Magazine</h1></div>
+
+        <div class="banner"><img src="images/20-1.jpg"/></div>
+       
              <div data-role="content">
                  <div id="issues"></div>
              </div>
