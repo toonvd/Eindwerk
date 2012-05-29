@@ -58,11 +58,25 @@
                          
             });
         });
+         window.onorientationchange = detectIPadOrientation;
+ function detectIPadOrientation () {
+
+	if ( orientation == 90 || orientation == -90) {
+	$('#wrap').hide();
+	$('#landscape').show();
+	}
+	else
+	{
+	$('#wrap').show();
+	$('#landscape').hide();
+	}
+	}
     </script>
         <title>issues</title>
     </head>
     <body>
-         <div data-role="page">
+        <div id="landscape"></div>
+         <div data-role="page" id="wrap">
          <div data-role="header" data-position="fixed"><h1>Magazine</h1></div>
 
         <div class="banner"><img src="images/20-1.jpg"/></div>

@@ -11,13 +11,28 @@
     <script src="js/Libraries/jquery.mobile-1.1.0.min.js"></script>
     <!--Home Made-->
     <script src="js/Parsers/generatestuff.js"></script> 
+    <script type="text/javascript">
+         window.onorientationchange = detectIPadOrientation;
+ function detectIPadOrientation () {
+
+	if ( orientation == 90 || orientation == -90) {
+	$('#wrap').hide();
+	$('#landscape').show();
+	}
+	else
+	{
+	$('#wrap').show();
+	$('#landscape').hide();
+	}
+	}
+    </script>
     <!-- End Declarations -->
     <title>Free Stuff!</title>
 </head>
 <body>
     <div id="fb-root"></div>
-
-    <div data-role="page">
+    <div id="landscape"></div>
+    <div data-role="page" id="wrap">
         <div data-role="header" data-position="fixed">
             <a href="" data-icon="back" data-rel="back">back</a>
             <h1>Free Stuff!</h1></div>

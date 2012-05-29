@@ -562,6 +562,13 @@ text-decoration: none;
 	margin:0 auto;
 	text-align:center;
 	}
+#landscape
+{
+display:none;
+background-image:url(../images/orientationimg.jpg);
+width:1024px;
+height:748px;
+}
 /*Einde eigen css
 */
 
