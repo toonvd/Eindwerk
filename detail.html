@@ -10,7 +10,7 @@
         <link rel="apple-touch-startup-image" href="images/portrait.png" media="only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:portrait)" />
         <link rel="stylesheet" href="css/jquery.mobile-1.1.0.min.css" />
         <!--Javascript libraries-->
-         <script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false"></script>
+        <script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false"></script>
         <script type="text/javascript" src="js/Libraries/jquery-1.7.1.min.js"></script>
         <script src="js/Libraries/jquery.mobile-1.1.0.min.js"></script>
         <script src="js/Libraries/infobox.js"></script>
@@ -27,100 +27,100 @@
                 }
                 var valoutput = decodeURIComponent($.urlParam('id'));
                       
-            getdetails(valoutput);
-          $('#map_canvas').hide();
-		  $('#concertinfo').hide();
-});  
-        function showhide(){
-          if ($('#map_canvas:visible').length > 0)
-              {
+                getdetails(valoutput);
+                $('#map_canvas').hide();
+                $('#concertinfo').hide();
+            });  
+            function showhide(){
+                if ($('#map_canvas:visible').length > 0)
+                {
                   
-                  $('#map_canvas').hide();
-              }
-              else
-                  {
+                    $('#map_canvas').hide();
+                }
+                else
+                {
                      
-                       $('#map_canvas').show();
-                        $('#map_canvas').gmap('refresh');
-						$('#concertinfo').show();
-                  }
+                    $('#map_canvas').show();
+                    $('#map_canvas').gmap('refresh');
+                    $('#concertinfo').show();
+                }
               
-    }
-     window.onorientationchange = detectIPadOrientation;
- function detectIPadOrientation () {
+            }
+            window.onorientationchange = detectIPadOrientation;
+            function detectIPadOrientation () {
 
-	if ( orientation == 90 || orientation == -90) {
-	$('#wrap').hide();
-	$('#landscape').show();
-	}
-	else
-	{
-	$('#wrap').show();
-	$('#landscape').hide();
-	}
-	}
+                if ( orientation == 90 || orientation == -90) {
+                    $('#wrap').hide();
+                    $('#landscape').show();
+                }
+                else
+                {
+                    $('#wrap').show();
+                    $('#landscape').hide();
+                }
+            }
 
         </script>
-        
-        
+
+
 
 
         <title>detail</title>
         <!-- End Declarations -->
     </head>
     <body>
-     <div id="fb-root"></div>
-     <div id="landscape"></div>
-<script>
-  window.fbAsyncInit = function() {
-    FB.init({
-      appId      : '134067536728048', // App ID
-      status     : true, // check login status
-      cookie     : true, // enable cookies to allow the server to access the session
-      xfbml      : true  // parse XFBML
-    });
+        <div id="fb-root"></div>
+        <div id="landscape"></div>
+        <script>
+            window.fbAsyncInit = function() {
+                FB.init({
+                    appId      : '134067536728048', // App ID
+                    status     : true, // check login status
+                    cookie     : true, // enable cookies to allow the server to access the session
+                    xfbml      : true  // parse XFBML
+                });
 
-    // Additional initialization code here
-  };
+                // Additional initialization code here
+            };
 
-  // Load the SDK Asynchronously
-  (function(d){
-     var js, id = 'facebook-jssdk', ref = d.getElementsByTagName('script')[0];
-     if (d.getElementById(id)) {return;}
-     js = d.createElement('script'); js.id = id; js.async = true;
-     js.src = "//connect.facebook.net/en_US/all.js";
-     ref.parentNode.insertBefore(js, ref);
-   }(document));
-</script>
+            // Load the SDK Asynchronously
+            (function(d){
+                var js, id = 'facebook-jssdk', ref = d.getElementsByTagName('script')[0];
+                if (d.getElementById(id)) {return;}
+                js = d.createElement('script'); js.id = id; js.async = true;
+                js.src = "//connect.facebook.net/en_US/all.js";
+                ref.parentNode.insertBefore(js, ref);
+            }(document));
+        </script>
         <div data-role="page" id="wrap">
             <div data-role="header">
-                <a href="" data-icon="back" data-rel="back">back</a>
                 <h1>Concert</h1>
             </div>            
             <div data-role="content">
                 <div class="banner"><img src="images/banner.jpg"/></div>
+                <a href="" data-rel="back"><img src="images/backbtn.png"/></a>   
                 <div id="container"></div>
                 <div id="social_concert"> 
-            	<ul id="socialmedialist_concert">
-                <li><a href="http://www.facebook.com/share.php?u=URL-TO-SHARE" onclick="return fb_like()" target="_blank"><img src="images/facebook.png"></a></li>
-                <li><div id="tweet"></div> </li>
-                <li><a href="#" onclick="gplus()"><img src="images/googleplus.png"></a></li>
-            </ul>
-            </div>
+                    <ul id="socialmedialist_concert">
+                        <li><a href="http://www.facebook.com/share.php?u=URL-TO-SHARE" onclick="return fb_like()" target="_blank"><img src="images/facebook.png"></a></li>
+                        <li><div id="tweet"></div> </li>
+                        <li><a href="#" onclick="gplus()"><img src="images/googleplus.png"></a></li>
+                    </ul>
+                </div>
                 <div id="moreinfo" onclick="showhide()">Meer info over dit concert</div>
                 <div id="concertinfo"></div>
                 <div id="map_canvas" style="width:400px;height:200px;"></div>
-                
-                
+
+
             </div>
             <div data-role="footer" data-position="fixed">
                 <div data-role="navbar">
                     <ul>
-                      <li onclick="window.location.href='index.html'"><a href="">Update!</a></li>
-                    <li onclick="window.location.href='xml-parser.html'"><a href="">Kalender</a></li>
-                     <li onclick="window.location.href='freestuff.html'"><a href="">Free Stuff</a></li>
-                    <li onclick="window.location.href='issues.php'"><a href="">Magazine</a></li>
-                </ul>
+                        <li onclick="window.location.href='index.html'"><a href="">Update!</a></li>
+                        <li onclick="window.location.href='xml-parser.html'"><a href="">Kalender</a></li>
+                        <li onclick="window.location.href='freestuff.html'"><a href="">Free Stuff</a></li>
+                        <li onclick="window.location.href='issues.php'"><a href="">Magazine</a></li>
+                    </ul>
                 </div>
             </div>
         </div>

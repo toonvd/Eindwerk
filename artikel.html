@@ -14,7 +14,7 @@
     <script src="js/media.js"></script>
     <script type="text/javascript">		
         $(document).ready(function(){
-             url=location.href;
+            url=location.href;
             $('#comments').append('<div class="fb-comments" data-href="'+url+'" data-num-posts="2" data-width="470"></div>');
             $.urlParam = function(name){
                 var results = new RegExp('[\\?&]' + name + '=([^&#]*)').exec(window.location.href);
@@ -36,17 +36,17 @@
                         return $(this).children().length === 0;
                     }).length;
                     var j = 0;
-					while(j < count){
-					if(j==i){
-						$('#pager').append('<img src="images/pager_active.png"/>').trigger('create');
-					}
-					else{
+                    while(j < count){
+                        if(j==i){
+                            $('#pager').append('<img src="images/pager_active.png"/>').trigger('create');
+                        }
+                        else{
 						
-					$('#pager').append('<img src="images/pager_inactive.png"/>').trigger('create');;
+                            $('#pager').append('<img src="images/pager_inactive.png"/>').trigger('create');;
 
-					}
-					j++;
-					}
+                        }
+                        j++;
+                    }
                 }
             })
             var i = decodeURIComponent($.urlParam('count'));
@@ -71,85 +71,85 @@
                         i++;
                     navigate(i);
                 }
-                     s
+                s
             });
         });
     </script>
     <script>
         function showhide(){
-          if ($('#comments:visible').length > 0)
-              {
-                  $('#comments').hide();
-              }
-              else
-                  {
-                       $('#comments').show();
-                  }
+            if ($('#comments:visible').length > 0)
+            {
+                $('#comments').hide();
+            }
+            else
+            {
+                $('#comments').show();
+            }
               
-    }
-     window.onorientationchange = detectIPadOrientation;
- function detectIPadOrientation () {
+        }
+        window.onorientationchange = detectIPadOrientation;
+        function detectIPadOrientation () {
 
-	if ( orientation == 90 || orientation == -90) {
-	$('#wrap').hide();
-	$('#landscape').show();
-	}
-	else
-	{
-	$('#wrap').show();
-	$('#landscape').hide();
-	}
-	}
-        </script>
-       
+            if ( orientation == 90 || orientation == -90) {
+                $('#wrap').hide();
+                $('#landscape').show();
+            }
+            else
+            {
+                $('#wrap').show();
+                $('#landscape').hide();
+            }
+        }
+    </script>
+
     <!-- End Declarations -->
     <title>Update!</title>
 </head>
 <body>
     <div id="fb-root"></div>
     <div id="landscape"></div>
-<script>
-  window.fbAsyncInit = function() {
-    FB.init({
-      appId      : '134067536728048', // App ID
-      status     : true, // check login status
-      cookie     : true, // enable cookies to allow the server to access the session
-      xfbml      : true  // parse XFBML
-    });
+    <script>
+        window.fbAsyncInit = function() {
+            FB.init({
+                appId      : '134067536728048', // App ID
+                status     : true, // check login status
+                cookie     : true, // enable cookies to allow the server to access the session
+                xfbml      : true  // parse XFBML
+            });
 
-    // Additional initialization code here
-  };
+            // Additional initialization code here
+        };
 
-  // Load the SDK Asynchronously
-  (function(d){
-     var js, id = 'facebook-jssdk', ref = d.getElementsByTagName('script')[0];
-     if (d.getElementById(id)) {return;}
-     js = d.createElement('script'); js.id = id; js.async = true;
-     js.src = "//connect.facebook.net/en_US/all.js";
-     ref.parentNode.insertBefore(js, ref);
-   }(document));
-</script>
+        // Load the SDK Asynchronously
+        (function(d){
+            var js, id = 'facebook-jssdk', ref = d.getElementsByTagName('script')[0];
+            if (d.getElementById(id)) {return;}
+            js = d.createElement('script'); js.id = id; js.async = true;
+            js.src = "//connect.facebook.net/en_US/all.js";
+            ref.parentNode.insertBefore(js, ref);
+        }(document));
+    </script>
     <div data-role="page" id="wrap">
         <div data-role="header" data-position="fixed">
-            <a href="" data-icon="back" data-rel="back">back</a>
+
             <h1>Update!</h1></div>
         <div data-role="content">
 
             <div class="banner"><img src="images/banner2.jpg"/></div>
-            
+            <a href="" data-rel="back"><img src="images/backbtn.png"/></a>   
             <div id="container"></div>
-			
+
             <div id="social"> 
-            	<ul id="socialmedialist">
-                <li><a href="http://www.facebook.com/share.php?u=URL-TO-SHARE" onclick="return fb_like()" target="_blank"><img src="images/facebook.png"></a></li>
-                <li><div id="tweet"></div> </li>
-                <li><a href="#" onclick="gplus()"><img src="images/googleplus.png"></a></li>
-            </ul>
+                <ul id="socialmedialist">
+                    <li><a href="http://www.facebook.com/share.php?u=URL-TO-SHARE" onclick="return fb_like()" target="_blank"><img src="images/facebook.png"></a></li>
+                    <li><div id="tweet"></div> </li>
+                    <li><a href="#" onclick="gplus()"><img src="images/googleplus.png"></a></li>
+                </ul>
             </div>
             <div id="showhide" onclick="showhide()">comments weergeven/verbergen</div>
-             <div id="comments"></div>
-              <div id="pager"></div>
-            
+            <div id="comments"></div>
+            <div id="pager"></div>
+
         </div>
         <div data-role="footer" data-position="fixed">
             <div data-role="navbar">
@@ -162,7 +162,7 @@
             </div>
         </div>
     </div>
-   
+
 </body>
 </html>
 
