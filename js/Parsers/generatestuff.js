@@ -6,12 +6,14 @@ $(document).ready(function generatestuff(){
         success: function(xml){
             var counter = 0;
             var line = "";
+               var window =  $(document).width();
+            var iheight = window * 0.20
             $(xml).find("stuff").each(function(){
                 if(counter > 0){
                     line = '<hr /> <br />'
                     }
                 $('#freestuff').append(line + '<div id="stuff" onclick="navigatea('+"'"+$(this).find('title').text()+"'"+')"><div id="titlestuff"><strong>'+$(this).find('title').text()+'</strong></div>'
-                    +'<div id="detail">'+$(this).find('detail').text()+'</div><div id="image"><img src="'+$(this).find('image').text()+'"alt="articleimage"/></div>'
+                    +'<div id="detail">'+$(this).find('detail').text()+'</div><div id="image"><img src="'+$(this).find('image').text()+'"alt="articleimage" style="width:'+iheight+'px;"/></div>'
                      
 					+'<div id="content">'+$(this).find('content').text()+'</div>'
                     +'<div id="url">'+$(this).find('url').text()+'</div></div><br />').trigger('create');	
