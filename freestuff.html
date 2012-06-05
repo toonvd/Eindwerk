@@ -6,9 +6,11 @@
     <meta name="format-detection" content="telephone=no" />
     <link rel="apple-touch-icon" href="images/apple-touch-icon.png" />
     <link rel="stylesheet" href="css/jquery.mobile-1.1.0.min.css" />
+    <link rel="stylesheet" href="css/owncss.css"/>
     <!--Javascript libraries-->
     <script type="text/javascript" src="js/Libraries/jquery-1.7.1.min.js"></script>
     <script src="js/Libraries/jquery.mobile-1.1.0.min.js"></script>
+    
     <!--Home Made-->
     <!--<script src="js/Parsers/generatestuff.js"></script>--> 
     <script type="text/javascript">
@@ -42,7 +44,7 @@
                     line = '<hr /> <br />'
                     }
                 $('#allfreestuff').append(line + '<div id="stuff" onclick="navigatea('+"'"+$(this).find('title').text()+"'"+')"><div id="titlestuff_all"><strong>'+$(this).find('title').text()+'</strong></div>'
-                    +'<div id="detail_all">'+$(this).find('detail').text()+'</div><div id="image_all"><img src="'+$(this).find('image').text()+'"alt="articleimage" style="width:'+iheight+'px;"/></div>'
+                    +'<div id="detail_all">'+$(this).find('detail').text()+'</div><div id="image_all"><img src="'+$(this).find('image').text()+'"alt="articleimage" style="width:50%"/></div>'
                      
 					+'<div id="content_all">'+$(this).find('content').text()+'</div>'
                     +'<div id="url">'+$(this).find('url').text()+'</div></div><br />').trigger('create');	

@@ -14,6 +14,7 @@
     <meta name="format-detection" content="telephone=no" />
     <link rel="apple-touch-icon" href="images/apple-touch-icon.png" />
     <link rel="stylesheet" href="css/jquery.mobile-1.1.0.min.css" />
+    <link rel="stylesheet" href="css/owncss.css"/>
     <!--Javascript libraries-->
     <script type="text/javascript" src="js/Libraries/jquery-1.7.1.min.js"></script>
     <script src="js/Libraries/jquery.mobile-1.1.0.min.js"></script>
@@ -94,6 +95,7 @@
         <title>issues</title>
     </head>
     <body>
+    
         <div id="landscape"></div>
          <div data-role="page" id="wrap">
          <div data-role="header" data-position="fixed"><h1>Magazine</h1></div>

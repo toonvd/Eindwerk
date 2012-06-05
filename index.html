@@ -9,7 +9,7 @@
 <link rel="apple-touch-startup-image" href="images/splashscreen.png">
     <link href="css/jquery.mobile.scrollview.css" rel="stylesheet" type="text/css" />
     <link rel="stylesheet" href="css/jquery.mobile-1.1.0.min.css" />
-    
+    <link rel="stylesheet" href="css/owncss.css"/>
 
     <!--Javascript libraries-->
 
@@ -111,7 +111,7 @@ $(document).ready(function generatestuff(){
                 if(counter > 0){
                     line = '<hr /> <br />'
                     }
-                $('#freestuff').append(line + '<div id="stuff" onclick="navigatea('+"'"+$(this).find('title').text()+"'"+')"><div id="titlestuff"><strong>'+$(this).find('title').text()+'</strong></div>'
+                $('#freestuff').append(line + '<div id="stuff" onclick="window.location.href='+"'"+'freestuff.html'+"'"+'"><div id="titlestuff"><strong>'+$(this).find('title').text()+'</strong></div>'
                     +'<div id="detail">'+$(this).find('detail').text()+'</div><div id="image"><img src="'+$(this).find('image').text()+'"alt="articleimage" style="width:'+iheight+'px;"/></div>'
                      
 					+'<div id="content">'+$(this).find('content').text()+'</div>'
