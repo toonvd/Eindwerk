@@ -1,4 +1,4 @@
-function parseLocation(adres, callback){
+/*function parseLocation(adres, callback){
 
     var geocoder = new google.maps.Geocoder();
     //convert location into longitude and latitude
@@ -72,3 +72,4 @@ function getdetails(artist){
         }
     })
 }
+*/

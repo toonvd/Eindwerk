@@ -1,4 +1,4 @@
-function getArticle(id) {
+/*function getArticle(id) {
                 $.ajax({
                     type: "GET",
                     url: "data/artikels.xml",
@@ -15,4 +15,4 @@ function getArticle(id) {
             }
             function navigate(id){
                  window.location.href="artikel.html?count="+id;
-            }
+            }*/

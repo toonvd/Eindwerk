@@ -1,4 +1,4 @@
-function navigate(artist)
+/*function navigate(artist)
 {
 window.location.href="detail.html?id="+encodeURIComponent(artist); 
 }
@@ -28,4 +28,4 @@ function generatexml(dateText){
             })
         }
     })
-}
+}*/

@@ -1,4 +1,4 @@
-$(document).ready(function generatestuff(){
+/*$(document).ready(function generatestuff(){
     $.ajax({                        
         type: "GET",
         url: "data/freestuff.xml",
@@ -21,4 +21,4 @@ $(document).ready(function generatestuff(){
             })
         }
     })
-})
+})*/

@@ -464,7 +464,7 @@ padding-bottom:25px;
     margin: 0;
 }
 /* ---- FREE STUFF PAGE----*/
-#freestuff #stuff #titlestuff{
+#allfreestuff #stuff #titlestuff_all{
 	font-family:ClarendonTMedRegular;
     color:#1f1426;
     font-size:32px;
@@ -472,13 +472,13 @@ padding-bottom:25px;
 	padding-top:15px;
 	text-align:center;
 	}
-#freestuff #stuff #image img{
+#allfreestuff #stuff #image_all img{
 	margin-left:25%;
-	width:50%;
+
 	
 }
 
-#freestuff #stuff #content{
+#allfreestuff #stuff #content_all{
 	font-family:Arial, Helvetica, sans-serif;
 	font-size:15px;
 	line-height:22px;
@@ -489,7 +489,7 @@ padding-bottom:25px;
 	margin:0 auto;
 	
 	}
-#freestuff #stuff #detail{
+#allfreestuff #stuff #detail_all{
 	 width:100%;
    	padding-left:15px;
 	padding-bottom:25px;
@@ -569,6 +569,7 @@ background-image:url(../images/orientationimg.jpg);
 width:1024px;
 height:748px;
 }
+
 /*Einde eigen css
 */
 

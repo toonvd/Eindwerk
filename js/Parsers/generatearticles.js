@@ -1,4 +1,4 @@
-function navigatea(position)
+/*function navigatea(position)
 {
 window.location.href="artikel.html?count="+position;	
 }
@@ -25,4 +25,4 @@ $(document).ready(function generatexml(){
         }
         
     })
-})
+})*/

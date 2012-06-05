@@ -10,7 +10,7 @@
     <script type="text/javascript" src="js/Libraries/jquery-1.7.1.min.js"></script>
     <script src="js/Libraries/jquery.mobile-1.1.0.min.js"></script>
     <!--Home Made-->
-    <script src="js/Parsers/generatestuff.js"></script> 
+    <!--<script src="js/Parsers/generatestuff.js"></script>--> 
     <script type="text/javascript">
          window.onorientationchange = detectIPadOrientation;
  function detectIPadOrientation () {
@@ -26,6 +26,32 @@
 	}
 	}
     </script>
+    <script type="text/javascript">
+		$(document).ready(function generatestuff(){
+    $.ajax({                        
+        type: "GET",
+        url: "data/freestuff.xml",
+        dataType: "xml",
+        success: function(xml){
+            var counter = 0;
+            var line = "";
+               var window =  $(document).width();
+            var iheight = window * 0.20
+            $(xml).find("stuff").each(function(){
+                if(counter > 0){
+                    line = '<hr /> <br />'
+                    }
+                $('#allfreestuff').append(line + '<div id="stuff" onclick="navigatea('+"'"+$(this).find('title').text()+"'"+')"><div id="titlestuff_all"><strong>'+$(this).find('title').text()+'</strong></div>'
+                    +'<div id="detail_all">'+$(this).find('detail').text()+'</div><div id="image_all"><img src="'+$(this).find('image').text()+'"alt="articleimage" style="width:'+iheight+'px;"/></div>'
+                     
+					+'<div id="content_all">'+$(this).find('content').text()+'</div>'
+                    +'<div id="url">'+$(this).find('url').text()+'</div></div><br />').trigger('create');	
+                counter++;
+            })
+        }
+    })
+})
+    </script>
     <!-- End Declarations -->
     <title>Free Stuff!</title>
 </head>
@@ -40,7 +66,7 @@
 
             <div class="banner"><img src="images/05-1.jpg"/></div>
             
-            <div id="freestuff"></div>
+            <div id="allfreestuff"></div>
            
             
         </div>

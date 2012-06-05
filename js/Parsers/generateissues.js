@@ -1,4 +1,4 @@
-function getNode(id) {
+/*function getNode(id) {
                 $.ajax({
                     type: "GET",
                     url: "data/issues.xml",
@@ -14,4 +14,4 @@ function getNode(id) {
                     $('#uitleg').append(oIssue.find('text').text()).trigger('create');
                 }
                 })
-            }
+            }*/
