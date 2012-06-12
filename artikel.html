@@ -13,21 +13,21 @@
     <!--Home Made-->
     <!--<script src="js/Parsers/generatedetaila.js"></script>-->
     <script type="text/javascript">
-        function showpopup(type){
+        function showsocialmedia(type,name){
         url=location.href;
         if(type=='facebook'){ 
-        var popupwindow = window.open('http://www.facebook.com/sharer.php?u='+url,'location=1,status=1,scrollbars=1,width=700,height=500'); 
+        var popupwindow = window.open('http://www.facebook.com/sharer.php?u='+url,name,'location=1,status=1,scrollbars=1,width=700,height=500'); 
         window.moveTo(20,20);
         }
         if(type=='twitter')
             {
-        var popupwindow = window.open('https://twitter.com/intent/tweet?original_referer='+url+'source=tweetbutton&text='+url,'location=1,status=1,scrollbars=1,width=700,height=500'); 
+        var popupwindow = window.open('https://twitter.com/intent/tweet?original_referer='+url,name+'source=tweetbutton&text='+url,'location=1,status=1,scrollbars=1,width=700,height=500'); 
         window.moveTo(20,20);
             }
         
         if(type=='gplus')
             {
-                 var popupwindow = window.open('https://plusone.google.com/_/+1/confirm?hl=en&url='+encodeURIComponent(url),'location=1,status=1,scrollbars=1,width=700,height=500'); 
+                 var popupwindow = window.open('https://plusone.google.com/_/+1/confirm?hl=en&url='+url,name,'location=1,status=1,scrollbars=1,width=700,height=500'); 
         window.moveTo(20,20);
             }
              }
@@ -181,9 +181,9 @@
 
             <div id="social"> 
                 <ul id="socialmedialist">
-                    <li><a onclick="showpopup('facebook');return false;" href="#"><img src="images/facebook.png"></a></li>
-                    <li><a onclick="showpopup('twitter');return false;" href="#"><img src="images/twitter.png"></a></li>
-                    <li><a onclick="showpopup('gplus');return false;" href="#"><img src="images/googleplus.png"></a></li>
+                    <li><a onclick="showsocialmedia('facebook');return false;" href="#"><img src="images/facebook.png"></a></li>
+                    <li><a onclick="showsocialmedia('twitter');return false;" href="#"><img src="images/twitter.png"></a></li>
+                    <li><a onclick="showsocialmedia('gplus');return false;" href="#"><img src="images/googleplus.png"></a></li>
                 </ul>
             </div>
             <div id="showhide" onclick="showhide()">comments weergeven/verbergen</div>
