@@ -19,8 +19,28 @@
         <script src="js/Libraries/jquery.ui.map.microdata.js"></script>
         
         <!--Home Made-->
-        <!--<script src="js/Parsers/generatedetail.js"></script> -->  
-        <script src="js/media.js"></script> 
+        <!--<script src="js/Parsers/generatedetail.js"></script> --> 
+        <script type="text/javascript">
+        function showsocialmedia(type,name){
+        url=location.href;
+        if(type=='facebook'){ 
+        var popupwindow = window.open('http://www.facebook.com/sharer.php?u='+url,name,'location=1,status=1,scrollbars=1,width=700,height=500'); 
+        window.moveTo(20,20);
+        }
+        if(type=='twitter')
+            {
+        var popupwindow = window.open('https://twitter.com/intent/tweet?original_referer='+url,name+'source=tweetbutton&text='+url,'location=1,status=1,scrollbars=1,width=700,height=500'); 
+        window.moveTo(20,20);
+            }
+        
+        if(type=='gplus')
+            {
+                 var popupwindow = window.open('https://plusone.google.com/_/+1/confirm?hl=en&url='+url,name,'location=1,status=1,scrollbars=1,width=700,height=500'); 
+        window.moveTo(20,20);
+            }
+             }
+    </script> 
+        <!--<script src="js/media.js"></script>--> 
         <script type="text/javascript">	
             $(document).ready(function(){
                 $.urlParam = function(name){
@@ -177,15 +197,15 @@ function getdetails(artist){
             </div>            
             <div data-role="content">
                 <div class="banner"><img src="images/banner.jpg"/></div>
-                <a href="" data-rel="back"><img src="images/backbtn.png" class="backbtn"/></a>   
+                <a href="" data-rel="back"><img src="images/backbtn2.png" class="backbtn"/></a>   
                 <div id="container"></div>
                 <div id="social_concert"> 
-                    <ul id="socialmedialist_concert">
-                        <li><a href="http://www.facebook.com/share.php?u=URL-TO-SHARE" onclick="return fb_like()" target="_blank"><img src="images/facebook.png"></a></li>
-                        <li><div id="tweet"></div> </li>
-                        <li><a href="#" onclick="gplus()"><img src="images/googleplus.png"></a></li>
-                    </ul>
-                </div>
+                <ul id="socialmedialist_concert">
+                    <li><a onclick="showsocialmedia('facebook');return false;" href="#"><img src="images/facebook.png"></a></li>
+                    <li><a onclick="showsocialmedia('twitter');return false;" href="#"><img src="images/twitter.png"></a></li>
+                    <li><a onclick="showsocialmedia('gplus');return false;" href="#"><img src="images/googleplus.png"></a></li>
+                </ul>
+            </div>
                 <div id="moreinfo" onclick="showhide()">Meer info over dit concert</div>
                 <div id="concertinfo"></div>
                 <div id="map_canvas" style="width:400px;height:200px;"></div>
