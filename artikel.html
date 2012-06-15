@@ -14,23 +14,23 @@
     <!--<script src="js/Parsers/generatedetaila.js"></script>-->
     <script type="text/javascript">
         function showsocialmedia(type,name){
-        url=location.href;
-        if(type=='facebook'){ 
-        var popupwindow = window.open('http://www.facebook.com/sharer.php?u='+url,name,'location=1,status=1,scrollbars=1,width=700,height=500'); 
-        window.moveTo(20,20);
-        }
-        if(type=='twitter')
+            url=location.href;
+            if(type=='facebook'){ 
+                var popupwindow = window.open('http://www.facebook.com/sharer.php?u='+url,name,'location=1,status=1,scrollbars=1,width=700,height=500'); 
+                window.moveTo(20,20);
+            }
+            if(type=='twitter')
             {
-        var popupwindow = window.open('https://twitter.com/intent/tweet?original_referer='+url,name+'source=tweetbutton&text='+url,'location=1,status=1,scrollbars=1,width=700,height=500'); 
-        window.moveTo(20,20);
+                var popupwindow = window.open('https://twitter.com/intent/tweet?original_referer='+url,name+'source=tweetbutton&text='+url,'location=1,status=1,scrollbars=1,width=700,height=500'); 
+                window.moveTo(20,20);
             }
         
-        if(type=='gplus')
+            if(type=='gplus')
             {
-                 var popupwindow = window.open('https://plusone.google.com/_/+1/confirm?hl=en&url='+url,name,'location=1,status=1,scrollbars=1,width=700,height=500'); 
-        window.moveTo(20,20);
+                var popupwindow = window.open('https://plusone.google.com/_/+1/confirm?hl=en&url='+url,name,'location=1,status=1,scrollbars=1,width=700,height=500'); 
+                window.moveTo(20,20);
             }
-             }
+        }
     </script>
     <script type="text/javascript">		
         $(document).ready(function(){
@@ -62,7 +62,7 @@
                         }
                         else{
 						
-                            $('#pager').append('<img src="images/pager_inactive.png"/>').trigger('create');;
+                            $('#pager').append('<img src="images/pager_inactive.png"/>').trigger('create');
 
                         }
                         j++;
@@ -73,25 +73,25 @@
              
             $('body').live('swipeleft swiperight',function(event){
                 if (event.type == "swipeleft") {
-                    if(i == 0)
-                    {
-                        i = count-1;
-                    }
-                    else
-                        i--;
-                    navigate(i);          
-                }
-                      
-                if (event.type == "swiperight") {
                     if(i==count-1)
                     {
                         i=0;
                     }
                     else
                         i++;
-                    navigate(i);
+                    navigate(i);    
                 }
-                s
+                      
+                if (event.type == "swiperight") {
+                   if(i == 0)
+                    {
+                        i = count-1;
+                    }
+                    else
+                        i--;
+                    navigate(i);   
+                }
+                
             });
         });
     </script>
@@ -122,24 +122,27 @@
         }
     </script>
     <script type="text/javascript">
-		function getArticle(id) {
-                $.ajax({
-                    type: "GET",
-                    url: "data/artikels.xml",
-                    dataType: "xml",
-                    success: function(xml){
-                        oArticle = $(xml).find('article:eq('+id+')');
-                         $('#container').append('<div id="title_article">'+oArticle.find('title').text()+'</div>'
-                    +'<div id="date_article">'+oArticle.find('date').text()+'</div>'
-					+oArticle.find('youtube').text()
-                    +'<div id="content_article">'+oArticle.find('fullcontent').text()+'</div>').trigger('create');
+        function getArticle(id) {
+            $.ajax({
+                type: "GET",
+                url: "data/artikels.xml",
+                dataType: "xml",
+                success: function(xml){
+                    oArticle = $(xml).find('article:eq('+id+')');
+                    var regExp = /.*(?:youtu.be\/|v\/|u\/\w\/|embed\/|watch\?v=)([^#\&\?]*).*/;
+                   
+                    var match = oArticle.find('youtube').text().match(regExp);  
+                    $('#container').append('<div id="title_article">'+oArticle.find('title').text()+'</div>'
+                        +'<div id="date_article">'+oArticle.find('date').text()+'</div>'
+                        +'<iframe width="600" height="315" src='+'"'+'http://www.youtube.com/embed/'+match[1]
+                        +'<div id="content_article">'+oArticle.find('fullcontent').text()+'</div>').trigger('create');
                        
-                    }
-                })
-            }
-            function navigate(id){
-                 window.location.href="artikel.html?count="+id;
-            }
+                }
+            })
+        }
+        function navigate(id){
+            window.location.href="artikel.html?count="+id;
+        }
     </script>
 
     <!-- End Declarations -->
@@ -197,7 +200,7 @@
                     <li onclick="window.location.href='index.html'"><a href="">Update!</a></li>
                     <li onclick="window.location.href='xml-parser.html'"><a href="">Kalender</a></li>
                     <li onclick="window.location.href='freestuff.html'"><a href="">Free Stuff</a></li>
-                    <li onclick="window.location.href='issues.html'"><a href="">Magazine</a></li>
+                    <li onclick="window.location.href='issues.php'"><a href="">Magazine</a></li>
                 </ul>
             </div>
         </div>
