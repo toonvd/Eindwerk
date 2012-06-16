@@ -42,7 +42,7 @@
     <script type="text/javascript">
 		function navigatea(position)
 {
-window.location.href="artikel.html?count="+position;	
+window.location.href="artikel.php?count="+position;	
 }
 $(document).ready(function generatexml(){
     $.ajax({                        
@@ -71,7 +71,7 @@ $(document).ready(function generatexml(){
 
 function navigate(artist)
 {	
-window.location.href="detail.html?id="+encodeURIComponent(artist);
+window.location.href="concert.php?id="+encodeURIComponent(artist);
 }
 $(document).ready(function generatexml(){
     $.ajax({
